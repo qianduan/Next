@@ -184,6 +184,7 @@ body {
     font-size: 1.8rem;
     line-height: 1.75em;
     color: #3A4145;
+    background: #ECF0F1;
     -webkit-font-feature-settings: 'kern' 1;
     -moz-font-feature-settings: 'kern' 1;
     -o-font-feature-settings: 'kern' 1;
@@ -474,7 +475,6 @@ margin on the iframe, cause it breaks stuff. */
     position: relative;
     z-index: 10;
     min-height: 100%;
-    background: #ECF0F1;
     -webkit-transition: -webkit-transform 0.5s ease;
             transition: transform 0.5s ease;
 }
@@ -498,10 +498,8 @@ body.nav-opened .site-wrapper {
     position: relative;
     display: table;
     width: 100%;
-    height: 100vh;
     margin-bottom: 5rem;
     text-align: center;
-    background: #222 no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -913,11 +911,8 @@ body.nav-opened .menu-button .word {
 
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
-    position: relative;
-    width: 80%;
-    max-width: 710px;
-    margin: 4rem auto;
-    padding-bottom: 4rem;
+    margin: 2rem auto;
+    padding-bottom: 2rem;
     border-bottom: #EBF2F6 1px solid;
     word-wrap: break-word;
     -moz-hyphens: auto;
@@ -949,8 +944,11 @@ body:not(.post-template) .post-title {
 
 .post-title a {
     text-decoration: none;
+    color:#141412;
 }
-
+.post-title a:hover{
+    color: #18BC9C;
+}
 .post-excerpt p {
     margin: 0;
     font-size: 0.9em;
@@ -958,15 +956,39 @@ body:not(.post-template) .post-title {
 }
 
 .read-more {
-    text-decoration: none;
+    display: inline-block;
+  margin-bottom: 0;
+  font-weight: normal;
+  text-align: center;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  background-image: none;
+  border: 1px solid transparent;
+  white-space: nowrap;
+  padding: 10px 15px;
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #ffffff;
+  background-color: #f39c12;
+  border-color: #f39c12;
 }
-
+.read-more:hover,
+.read-more:focus{
+    color: #ffffff;
+  background-color: #c87f0a;
+  border-color: #be780a;
+  }
 .post-meta {
     display: block;
     margin: 1.75rem 0 0 0;
     font-size: 1.5rem;
     line-height: 2.2rem;
-    color: #9EABB3;
 }
 
 .author-thumb {
@@ -978,7 +1000,6 @@ body:not(.post-template) .post-title {
 }
 
 .post-meta a {
-    color: #9EABB3;
     text-decoration: none;
 }
 
@@ -1431,13 +1452,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .site-footer {
-    position: relative;
-    margin: 8rem 0 0 0;
-    padding: 0.5rem 15px;
-    border-top: #EBF2F6 1px solid;
-    font-size: 1rem;
-    line-height: 1.75em;
-    color: #ECF0F1;
+    background-color:#2C3E50;
 }
 
 .site-footer a {

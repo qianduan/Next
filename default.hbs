@@ -1,48 +1,91 @@
 <!DOCTYPE html>
 <html>
-<head>
-    {{! Document Settings }}
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-    {{! Page Meta }}
-    <title>{{meta_title}}</title>
-    <meta name="description" content="{{meta_description}}" />
-
-    <meta name="HandheldFriendly" content="True" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="shortcut icon" href="{{asset "favicon.ico"}}">
-
-    {{! Styles'n'Scripts }}
-    <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
-
-    {{! Ghost outputs important style and meta data with this tag }}
-    {{ghost_head}}
-</head>
-<body class="{{body_class}} nav-closed">
-
-    {{navigation}}
-
-    <div class="site-wrapper">
-
-        {{! Everything else gets inserted here }}
-        {{{body}}}
-
-        <footer class="site-footer clearfix">
-            <section class="copyright"><a href="{{@blog.url}}">{{@blog.title}}</a> &copy; {{date format="YYYY"}}</section>
-            <section class="poweredby">Proudly published with <a href="https://ghost.org">Ghost</a></section>
-        </footer>
-
-    </div>
-
-    {{! Ghost outputs important scripts and data with this tag }}
-    {{ghost_foot}}
-
-    {{! The main JavaScript file for Casper }}
-    <script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "js/index.js"}}"></script>
-
+	<head>
+		{{! Document Settings }}
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		{{! Page Meta }}
+		<title>{{meta_title}}</title>
+		<meta name="description" content="{{meta_description}}" />
+		<meta name="HandheldFriendly" content="True" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="shortcut icon" href="{{asset "favicon.ico"}}">
+		{{! Styles'n'Scripts }}
+		<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+		<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400" />
+		{{! Ghost outputs important style and meta data with this tag }}
+		{{ghost_head}}
+	</head>
+	<body class="{{body_class}} nav-closed">
+		{{navigation}}
+		<div class="site-wrapper">
+			{{! Everything else gets inserted here }}
+			{{{body}}}
+			<footer class="site-footer clearfix">
+				<section class="clearfix footer-widgets">
+					<div class="footer-inner">
+						<div class="widget">
+							<h3 class="widget-title">合作网站</h3>
+							<ul>
+								<li><a href="http://accessibilityunion.org/" target="_blank">信息无障碍产品联盟</a></li>
+								<li><a href="http://www.alloyteam.com/" target="_blank">腾讯AlloyTeam</a></li>
+								<li><a href="http://w3ctech.com/" rel="colleague" title="Web 标准化交流会">Web 标准化交流会</a></li>
+								<li><a href="http://www.futu5.com/invite/6496df46692097bf" title="买股票最方便的服务，没有之一~~">富途证券</a></li>
+							</ul>
+						</div>
+						<div class="widget">
+							<h3 class="widget-title">友情链接</h3>
+							<ul class="blogroll">
+								<li><a href="http://www.99css.com/" target="_blank">99CSS</a></li>
+								<li><a href="http://ooxx.me" rel="friend">大猫の意淫网志</a></li>
+								<li><a href="http://ofcss.com/" rel="friend" title="小李刀刀（kairee）的技术博客" target="_blank">裁纸刀下</a></li>
+								<li><a href="http://gaowhen.com/" rel="friend co-worker" title="高温的博客" target="_blank">GaoWhen高H温</a></li>
+								<li><a href="http://www.topcss.org/" rel="friend" title="关注信息无障碍" target="_blank">进步博客</a></li>
+								<li><a href="http://www.whyidc.com/" rel="friend" title="国内优质双线全能空间" target="_blank">WhyIDC 双线全能空间</a></li>
+								<li><a href="http://www.benben.cc/" target="_blank">笨笨剥壳</a></li>
+								<li><a href="http://www.smallni.com" rel="friend">Smallni's blog</a></li>
+								<li><a href="http://www.misuisui.com/" target="_blank">米随随s5s5</a></li>
+								<li><a href="http://xio.ng" rel="friend">熊宝</a></li>
+								<li><a href="http://blog.wpjam.com/" rel="friend">我爱水煮鱼</a></li>
+								<li><a href="http://www.osmn00.com" title="堂主，WEB前端开发技术" target="_blank">堂主</a></li>
+								<li><a href="http://www.mangguo.org" rel="friend">芒果</a></li>
+								<li><a href="http://pufen.net/" target="_blank" rel="friend">飘飘的生活空间</a></li>
+								<li><a href="http://ivane.me/" rel="friend" target="_blank">黄老湿</a></li>
+								<li><a href="http://www.itstrike.cn/" target="_blank">软件开发网</a></li>
+								<li><a href="http://jiawin.com/" title="觉唯前端" target="_blank">觉唯前端</a></li>
+								<li><a href="http://www.qlstudio.cn/" target="_blank">启良工作室</a></li>
+								<li><a href="http://www.whycss.com/" target="_blank">前端网址导航</a></li>
+								<li><a href="http://www.jser.com/">JSER</a></li>
+								<li><a href="http://www.iefans.net/" target="_blank">IE浏览器</a></li>
+								<li><a href="http://csshouse.net/" rel="friend" target="_blank">CSS HOUSE</a></li>
+								<li><a href="http://suta.im/" target="_blank">suta</a></li>
+								<li><a href="http://rlog.cn/" title="robin 肉饼">Time Machine</a></li>
+								<li><a href="http://www.ux265.net/" target="_blank">前端博客导航</a></li>
+								<li><a href="http://www.css88.com/" rel="friend" title="专注前端开发，关注用户体验" target="_blank">WEB前端开发</a></li>
+							</ul>
+						</div>
+						<div class="widget">
+							<h3 class="widget-title">Meta</h3>
+							<ul>
+								<li><a href="http://www.qianduan.net/wp-login.php">Log in</a></li>
+								<li><a href="http://www.qianduan.net/feed">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+								<li><a href="http://www.qianduan.net/comments/feed">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+								<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<section class="copyright">
+					<a href="{{@blog.url}}">{{@blog.title}}</a> &copy; 2008-{{date format="YYYY"}} All rights reserved.<br />
+					Hosted by <a href="http://www.linode.com/?r=d5156fa674d41bf96fbace51c9fade505f6fd852">Linode VPS</a><br>
+					Proudly published with <a href="https://ghost.org">Ghost</a>
+				</section>
+			</footer>
+		</div>
+	{{! Ghost outputs important scripts and data with this tag }}
+	{{ghost_foot}}
+	{{! The main JavaScript file for Casper }}
+	<script type="text/javascript" src="{{asset "js/jquery.fitvids.js"}}"></script>
+	<script type="text/javascript" src="{{asset "js/index.js"}}"></script>
 </body>
 </html>
