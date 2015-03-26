@@ -1,8 +1,9 @@
-# Casper
+# Next
 
-The default theme for [Ghost](http://github.com/tryghost/ghost/).
+A minimalist Ghost theme for [前端观察](http://www.qianduan.net)
 
-To download, visit the [releases](https://github.com/TryGhost/Casper/releases) page.
+Based on Ghost's default theme [Casper](https://github.com/TryGhost/Casper/).
+
 
 ## Copyright & License
 
