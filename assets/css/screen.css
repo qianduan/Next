@@ -179,19 +179,15 @@ html {
 body {
 	height: 100%;
 	max-height: 100%;
-	font-family:"Helvetica neue",Helvetica,"lantinghei sc", sans-serif;
-	letter-spacing: 0.01rem;
-	font-size: 1.8rem;
-	line-height: 1.75em;
+	font-family:Tahoma,"Helvetica neue",Helvetica,"lantinghei sc","Microsoft Yahei", sans-serif;
+	font-size: 1.4rem;
+	line-height: 1.5em;
 	color: #3A4145;
 	background: #ECF0F1;
 	-webkit-font-feature-settings: 'kern' 1;
 	-moz-font-feature-settings: 'kern' 1;
 	-o-font-feature-settings: 'kern' 1;
 	text-rendering: geometricPrecision;
-}
-.isWindows{
-	font-family:Tahoma,"Microsoft Yahei", sans-serif;
 }
 ::-moz-selection {
 	background: #D6EDFF;
@@ -242,6 +238,7 @@ h6 {
 a {
 	color: #18BC9C;
 	transition: color 0.3s ease;
+	text-decoration: none;
 }
 
 a:hover {
@@ -1454,9 +1451,14 @@ body:not(.post-template) .post-title {
 .site-footer {
 	overflow: hidden;
 }
-
+.site-footer ol,
+.site-footer ul{
+	list-style-type: none;
+	padding-left: 0;
+}
 .footer-widgets{
 	background-color:#2C3E50;
+	color: #000;
 }
 .widgets-wrap,.copyright{
 	width: 960px;
@@ -1467,14 +1469,21 @@ body:not(.post-template) .post-title {
 	float: left;
 	width: 320px;
 }
+.widget h3{
+	font-size: 1.8rem
+}
 .widget li{
 	padding: 5px 0;
+	margin: 0;
 }
 .blogroll li{
 	display: inline-block;
 	*display: inline;
 	*zoom:1;
 	vertical-align: top;
+}
+.copyright{
+	padding: 2rem 0;
 }
 
 /* ==========================================================================
