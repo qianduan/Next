@@ -1467,6 +1467,9 @@ body:not(.post-template) .post-title {
 	float: left;
 	width: 320px;
 }
+.widget li{
+	padding: 5px 0;
+}
 .blogroll li{
 	display: inline-block;
 	*display: inline;
@@ -1562,7 +1565,7 @@ body:not(.post-template) .post-title {
 	}
 
 	.author-profile .author-bio {
-		font-size: 1.6rem;
+		font-size: 1.4rem;
 	}
 
 	.author-meta span {
@@ -1570,7 +1573,7 @@ body:not(.post-template) .post-title {
 		margin: 1.5rem 0;
 	}
 	.author-profile .author-meta span {
-		font-size: 1.6rem;
+		font-size: 1.3rem;
 	}
 
 	.post-head.main-header {
