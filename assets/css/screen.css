@@ -905,34 +905,30 @@ body.nav-opened .menu-button .word {
 	-webkit-animation-delay: 0.1s;
 	animation-delay: 0.1s;
 }
+.main-content{
 
+	margin: 0 auto;
+	width: 960px;
+	position: relative;
+}
+.content{
+	overflow: hidden;
+	display: inline-block;
+	vertical-align: top;
+	width: 620px;
+	margin-right: 20px;
+}
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
 	margin: 2rem auto;
 	padding-bottom: 2rem;
-	border-bottom: #EBF2F6 1px solid;
 	word-wrap: break-word;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
 	-webkit-hyphens: auto;
 	hyphens: auto;
-}
-
-/* Add a little circle in the middle of the border-bottom on our .post
-   just for the lolz and stylepoints. */
-.post:after {
-	display: block;
-	content: "";
-	width: 7px;
-	height: 7px;
-	border: #E7EEF2 1px solid;
-	position: absolute;
-	bottom: -5px;
-	left: 50%;
-	margin-left: -5px;
-	background: #FFF;
-	border-radius: 100%;
-	box-shadow: #FFF 0 0 0 5px;
+	background-color: #fff;
+	overflow: hidden;
 }
 
 body:not(.post-template) .post-title {
@@ -1205,6 +1201,66 @@ body:not(.post-template) .post-title {
 	color: #50585D;
 }
 
+/*
+side bar style
+
+*/
+.sidebar{
+
+}
+
+/**
+ * Widgets
+ * ----------------------------------------------------------------------------
+ */
+
+.widget {
+	
+	font-size: 14px;
+	-webkit-hyphens: auto;
+	-moz-hyphens:    auto;
+	-ms-hyphens:     auto;
+	hyphens:         auto;
+	margin:20px 0 0;
+	padding:0;
+	word-wrap: break-word;
+}
+
+.widget .widget-title {
+	font-weight: 400;
+	margin:0;
+	text-indent: 20px;
+	font-size: 18px;
+	border-bottom: 1px solid #ECF0F1;
+	padding: 5px 0;
+}
+
+.widget ul,
+.widget ol {
+	list-style-type: none;
+	margin: 0;
+	padding: 10px 20px;
+}
+
+.widget .textwidget {
+	padding:10px 20px;
+}
+.widget li {
+	padding: 5px 0;
+}
+
+.widget li > ul,
+.widget li > ol {
+	margin-left: 20px;
+}
+.give-me-five{
+	text-align: center;
+	padding: 10px 0
+}
+.give-me-five img{
+	max-width: 100%;
+}
+
 
 /* ==========================================================================
    6. Author profile
@@ -1464,12 +1520,12 @@ body:not(.post-template) .post-title {
 	width: 960px;
 	margin: 0 auto;
 }
-.widget{
-	color: #fff;
+.footer-widgets .widget{
 	float: left;
 	width: 320px;
 }
-.widget h3{
+.widget h3.widget-title{
+	color:#fff;
 	font-size: 1.8rem
 }
 .widget li{
