@@ -3,17 +3,14 @@
 {{! The big featured header }}
 <header class="main-header">
 	<nav class="main-nav clearfix">
-		<ul>
-			<li><a href="">Search</a></li>
-			<li><a href="javascript:;">weChat</a></li>
-			<li><a href="{{@blog.url}}/rss/">Subscribe</a></li>
-		</ul>
-	</nav>
-	<div class="vertical">
-		<div class="main-header-content">
-			<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-			{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
+		<div class="inner"><a href="">Search</a>
+			<a href="javascript:;">weChat</a>
+			<a href="{{@blog.url}}/rss/">Subscribe</a>
 		</div>
+	</nav>
+	<div class="main-header-content">
+		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
 	</div>
 	{{navigation}}
 </header>
