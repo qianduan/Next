@@ -13,7 +13,7 @@
             {{/if}}
         </nav>
     </header>
-
+<div class="main-content">
     <section class="author-profile inner">
         {{#if image}}
         <figure class="author-image">
@@ -38,4 +38,16 @@
     {{! The tag below includes the post loop - partials/loop.hbs }}
     {{> "loop"}}
 
-</main>
+</main><aside class="sidebar">
+{{!-- for sidebar --}}
+	<div class="give-me-five">
+		<img src="http://feimg.qiniudn.com/1002015r.jpg" alt="">
+	</div>
+	<div class="widget">
+		<h3 class="widget-title">Hot Tags</h3>
+		<div class="widget-box">
+			{{tags}}
+		</div>
+	</div>
+</aside>
+</div>
