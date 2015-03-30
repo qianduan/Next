@@ -179,7 +179,7 @@ html {
 body {
 	height: 100%;
 	max-height: 100%;
-	font-family:Tahoma,"Helvetica neue",Helvetica,"lantinghei sc","Microsoft Yahei", sans-serif;
+	font-family:"Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Microsoft Yahei", sans-serif;
 	font-size: 1.6rem;
 	line-height: 1.6em;
 	color: #3A4145;
@@ -988,42 +988,10 @@ side bar style
    6. Author profile
    ========================================================================== */
 
-.tag-head.main-header {
-	height: 40vh;
-	min-height: 180px;
-}
-
-.author-head.main-header {
-	height: 40vh;
-	min-height: 180px;
-}
-
-.no-cover.author-head.main-header {
-	height: 10vh;
-	min-height: 100px;
-	background: transparent;
-}
-
 .author-profile {
 	padding: 0 15px 5rem 15px;
 	border-bottom: #EBF2F6 1px solid;
 	text-align: center;
-}
-
-/* Add a little circle in the middle of the border-bottom */
-.author-profile:after {
-	display: block;
-	content: "";
-	width: 7px;
-	height: 7px;
-	border: #E7EEF2 1px solid;
-	position: absolute;
-	bottom: -5px;
-	left: 50%;
-	margin-left: -5px;
-	background: #FFF;
-	border-radius: 100%;
-	box-shadow: #FFF 0 0 0 5px;
 }
 
 .author-image {
@@ -1076,6 +1044,9 @@ side bar style
 	font-weight: 200;
 	color: #50585D;
 	text-indent: 0;
+	width: 960px;
+	margin:0 auto;
+	margin-bottom: 2rem;
 }
 
 .author-meta {
@@ -1247,6 +1218,7 @@ side bar style
 }
 .copyright{
 	padding: 2rem 0;
+	line-height: 1.4;
 }
 
 /* ==========================================================================
