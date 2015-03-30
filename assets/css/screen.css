@@ -915,7 +915,7 @@ body.nav-opened .menu-button .word {
 }
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
-	margin: 2rem auto;
+	margin:0 auto 2rem;
 	padding: 2rem;
 	word-wrap: break-word;
 	-moz-hyphens: auto;
@@ -1047,6 +1047,7 @@ body:not(.post-template) .post-title {
 
 .post-template .post-title {
 	margin-bottom: 0;
+	font-weight: 400;
 }
 
 .post-template .post-meta {
@@ -1068,7 +1069,6 @@ body:not(.post-template) .post-title {
 
 /* Tweak the .post wrapper style */
 .post-template .post {
-	margin-top: 0;
 	border-bottom: none;
 	padding-bottom: 0;
 }
@@ -1193,9 +1193,6 @@ side bar style
 	display: inline-block;
 	vertical-align: top;
 }
-.sidebar .widget{
-	background-color: #fff;
-}
 /**
  * Widgets
  * ----------------------------------------------------------------------------
@@ -1216,39 +1213,45 @@ side bar style
 .widget .widget-title {
 	font-weight: 400;
 	margin:0;
-	text-indent: 20px;
-	font-size: 18px;
-	border-bottom: 1px solid #ECF0F1;
-	padding: 5px 0;
+	font-size: 1.8rem;
+	padding: .5rem 0;
 }
 
 .widget ul,
 .widget ol {
 	list-style-type: none;
 	margin: 0;
-	padding: 10px 20px;
+	padding: 1rem 2rem;
 }
 
 .widget .textwidget {
-	padding:10px 20px;
+	padding: 1rem 2rem
 }
 .widget li {
-	padding: 5px 0;
+	padding: .5rem 0;
 }
 
 .widget li > ul,
 .widget li > ol {
-	margin-left: 20px;
+	margin-left: 2rem;
 }
 .give-me-five{
 	text-align: center;
-	padding: 10px 0
+	padding: 1rem 0;
+	background-color: #fff;
 }
 .give-me-five img{
 	max-width: 100%;
 }
+/*widget for sidebar*/
 
-
+.sidebar .widget{
+	background-color: #fff;
+}
+.sidebar .widget .widget-title{
+	border-bottom: 1px solid #ECF0F1;
+	text-indent: 2rem
+}
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
@@ -1509,12 +1512,11 @@ side bar style
 	float: left;
 	width: 320px;
 }
-.widget h3.widget-title{
+.footer-widgets h3.widget-title{
 	color:#fff;
-	font-size: 1.8rem
 }
 .widget li{
-	padding: 5px 0;
+	padding: .5rem 0;
 	margin: 0;
 }
 .blogroll li{
@@ -1736,7 +1738,6 @@ side bar style
 
 	.post {
 		width: auto;
-		margin-top: 2rem;
 		margin-bottom: 2rem;
 		margin-left: 16px;
 		margin-right: 16px;
