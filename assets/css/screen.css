@@ -204,19 +204,16 @@ h4, h5, h6 {
 	-o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
 	color: #2E2E2E;
 	line-height: 1.15em;
-	margin: 0 0 0.4em 0;
+	margin: 0 0 0.1em 0;
 	text-rendering: geometricPrecision;
 }
 
 h1 {
 	font-size: 5rem;
-	letter-spacing: -2px;
-	text-indent: -3px;
 }
 
 h2 {
 	font-size: 3.6rem;
-	letter-spacing: -1px;
 }
 
 h3 {
@@ -859,7 +856,6 @@ body.nav-opened .menu-button .word {
 .page-title {
 	margin: 10px 0 10px 0;
 	font-size: 5rem;
-	letter-spacing: -1px;
 	font-weight: 700;
 	color: #fff;
 }
@@ -870,7 +866,6 @@ body.nav-opened .menu-button .word {
 	line-height: 1.5em;
 	font-weight: 400;
 	font-family: serif;
-	letter-spacing: 0.01rem;
 	color: rgba(255,255,255,0.8);
 }
 
@@ -921,7 +916,7 @@ body.nav-opened .menu-button .word {
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
 	margin: 2rem auto;
-	padding-bottom: 2rem;
+	padding: 2rem;
 	word-wrap: break-word;
 	-moz-hyphens: auto;
 	-ms-hyphens: auto;
@@ -950,38 +945,30 @@ body:not(.post-template) .post-title {
 
 .read-more {
 	display: inline-block;
-  margin-bottom: 0;
-  font-weight: normal;
-  text-align: center;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-	  touch-action: manipulation;
-  cursor: pointer;
-  background-image: none;
-  border: 1px solid transparent;
-  white-space: nowrap;
-  padding: 10px 15px;
-  font-size: 15px;
-  line-height: 1.5;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  color: #ffffff;
-  background-color: #f39c12;
-  border-color: #f39c12;
+	text-align: center;
+	vertical-align: middle;
+	-ms-touch-action: manipulation;
+	touch-action: manipulation;
+	cursor: pointer;
+	padding: 1rem 1.5rem;
+	font-size: 1.5rem;
+	line-height: 1.5;
+	color: #ffffff;
+	background-color: #f39c12;
+	border-color: #f39c12;
+	float: right;
 }
 .read-more:hover,
 .read-more:focus{
 	color: #ffffff;
-  background-color: #c87f0a;
-  border-color: #be780a;
-  }
+	background-color: #c87f0a;
+	border-color: #be780a;
+}
 .post-meta {
 	display: block;
-	margin: 1.75rem 0 0 0;
+	margin:0 0 1.5rem;
 	font-size: 1.5rem;
-	line-height: 2.2rem;
+	/*line-height: 2.2rem;*/
 }
 
 .author-thumb {
@@ -1009,10 +996,6 @@ body:not(.post-template) .post-title {
 .post-date {
 	display: inline-block;
 	margin-left: 8px;
-	padding-left: 12px;
-	border-left: #d5dbde 1px solid;
-	text-transform: uppercase;
-	font-size: 1.3rem;
 	white-space: nowrap;
 }
 
@@ -1206,9 +1189,13 @@ side bar style
 
 */
 .sidebar{
-
+	width: 320px;
+	display: inline-block;
+	vertical-align: top;
 }
-
+.sidebar .widget{
+	background-color: #fff;
+}
 /**
  * Widgets
  * ----------------------------------------------------------------------------
@@ -1365,7 +1352,6 @@ side bar style
 	line-height: 1.5em;
 	font-weight: 200;
 	color: #50585D;
-	letter-spacing: 0;
 	text-indent: 0;
 }
 
@@ -1376,7 +1362,6 @@ side bar style
 .author-profile .author-meta {
 	margin: 2rem 0;
 	font-family: serif;
-	letter-spacing: 0.01rem;
 	font-size: 1.7rem;
 }
 .author-meta span {
@@ -1576,7 +1561,6 @@ side bar style
 
 	.page-title {
 		font-size: 4rem;
-		letter-spacing: -1px;
 	}
 
 	.page-description {
@@ -1800,12 +1784,10 @@ side bar style
 
 	h1 {
 		font-size: 2.8rem;
-		letter-spacing: -1px;
 	}
 
 	h2 {
 		font-size: 2.4rem;
-		letter-spacing: 0;
 	}
 
 	h3 {
