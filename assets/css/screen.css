@@ -854,10 +854,11 @@ body.nav-opened .menu-button .word {
 
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
-	margin: 10px 0 10px 0;
+	margin: 10px auto;
 	font-size: 5rem;
 	font-weight: 700;
 	color: #fff;
+	font-family: "STFangsong","Songti TC","simsun","宋体",Arial,serif;	
 }
 
 .page-description {

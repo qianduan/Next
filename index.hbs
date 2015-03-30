@@ -2,19 +2,26 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{! The big featured header }}
 <header class="main-header {{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav overlay clearfix">
-        {{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
-        {{#if @blog.navigation}}
-        <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
-        {{/if}}
-    </nav>
-    <div class="vertical">
-        <div class="main-header-content inner">
-            <h1 class="page-title">{{@blog.title}}</h1>
-            <h2 class="page-description">{{@blog.description}}</h2>
-        </div>
-    </div>
-    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+	<nav class="main-nav overlay clearfix">
+		{{#if @blog.logo}}<a class="blog-logo" href="{{@blog.url}}"><img src="{{@blog.logo}}" alt="Blog Logo" /></a>{{/if}}
+		{{#if @blog.navigation}}
+		<a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+		{{/if}}
+	</nav>
+	<div class="vertical">
+		<div class="main-header-content inner">
+			<h1 class="page-title">{{@blog.title}}</h1>
+			<h2 class="page-description">{{@blog.description}}</h2>
+		</div>
+	</div>
+	<div class="top-nav">
+		<ul>
+			{{#foreach navigation}}
+				<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
+			{{/foreach}}
+		</ul>
+	</div>
+	<a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 <div class="main-content">
 {{! The main content area on the homepage }}
@@ -23,14 +30,14 @@
 {{> "loop"}}
 </main><aside class="sidebar">
 {{!-- for sidebar --}}
-    <div class="give-me-five">
-        <img src="http://feimg.qiniudn.com/1002015r.jpg" alt="">
-    </div>
-    <div class="widget">
-        <h3 class="widget-title">Hot Tags</h3>
-        <div class="widget-box">
-            {{tags}}
-        </div>
-    </div>
+	<div class="give-me-five">
+		<img src="http://feimg.qiniudn.com/1002015r.jpg" alt="">
+	</div>
+	<div class="widget">
+		<h3 class="widget-title">Hot Tags</h3>
+		<div class="widget-box">
+			{{tags}}
+		</div>
+	</div>
 </aside>
 </div>
