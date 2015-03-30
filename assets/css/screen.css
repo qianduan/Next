@@ -988,18 +988,6 @@ side bar style
    6. Author profile
    ========================================================================== */
 
-.post-head.main-header {
-	height: 65vh;
-	min-height: 180px;
-}
-
-.no-cover.post-head.main-header {
-	height: 85px;
-	min-height: 0;
-	margin-bottom: 0;
-	background: transparent;
-}
-
 .tag-head.main-header {
 	height: 40vh;
 	min-height: 180px;
