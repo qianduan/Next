@@ -14,13 +14,7 @@
 			<h2 class="page-description">{{@blog.description}}</h2>
 		</div>
 	</div>
-	<div class="top-nav">
-		<ul>
-			{{#foreach navigation}}
-				<li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-			{{/foreach}}
-		</ul>
-	</div>
+	{{navigation}}
 	<a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
 </header>
 <div class="main-content">
