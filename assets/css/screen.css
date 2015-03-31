@@ -1319,23 +1319,6 @@ side bar style
 		font-size: 1.3rem;
 	}
 
-	.post-head.main-header {
-		height:45vh;
-	}
-
-	.tag-head.main-header,
-	.author-head.main-header {
-		height: 30vh;
-	}
-
-	.no-cover.post-head.main-header {
-		height: 55px;
-		padding: 0;
-	}
-
-	.no-cover.author-head.main-header {
-		padding: 0;
-	}
 
 }
 
@@ -1570,15 +1553,6 @@ side bar style
 
 	.author-profile {
 		padding-bottom: 2rem;
-	}
-
-	.post-head.main-header {
-		height: 30vh;
-	}
-
-	.tag-head.main-header,
-	.author-head.main-header {
-		height: 20vh;
 	}
 
 	.author-profile .author-image {
