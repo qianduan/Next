@@ -8,7 +8,19 @@
 	<header class="main-header author-head {{#if cover}}" style="background-image: url({{cover}}){{else}}no-cover{{/if}}">
 		<nav class="main-nav clearfix">
 		<div class="inner">
-			<a href="">Search</a>
+			<script>
+  (function() {
+    var cx = '002054369585018740412:jm6issx8lkg';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
 			<a href="javascript:;">weChat</a>
 			<a href="{{@blog.url}}/rss/">Subscribe</a>
 		</div>
