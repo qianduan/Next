@@ -1,5 +1,5 @@
 /**
- * Main JS file for Casper behaviours
+ * Main JS file for Next theme behaviours
  */
 
 /* globals jQuery, document */
@@ -53,4 +53,5 @@
         });
 
     };
+    $('.related-posts').ghostRelated();
 })(jQuery);
