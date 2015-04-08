@@ -1224,9 +1224,6 @@ side bar style
 		padding: 15% 0;
 	}
 
-	.scroll-down,
-	.home-template .main-header:after { display: none; }
-
 	.archive-template .main-header {
 		min-height: 180px;
 		padding: 10% 0;
@@ -1582,37 +1579,6 @@ side bar style
 		transform: translateY(0);
 	}
 }
-
-/* Used to bounce .scroll-down on home page */
-@-webkit-keyframes bounce {
-	0%, 10%, 25%, 40%, 50% {
-		-webkit-transform: translateY(0) rotate(-90deg);
-				transform: translateY(0) rotate(-90deg);
-	}
-	20% {
-		-webkit-transform: translateY(-10px) rotate(-90deg);
-				transform: translateY(-10px) rotate(-90deg);
-	}
-	30% {
-		-webkit-transform: translateY(-5px) rotate(-90deg);
-				transform: translateY(-5px) rotate(-90deg);
-	}
-}
-@keyframes bounce {
-	0%, 20%, 50%, 80%, 100% {
-		-webkit-transform: translateY(0) rotate(-90deg);
-				transform: translateY(0) rotate(-90deg);
-	}
-	40% {
-		-webkit-transform: translateY(-10px) rotate(-90deg);
-				transform: translateY(-10px) rotate(-90deg);
-	}
-	60% {
-		-webkit-transform: translateY(-5px) rotate(-90deg);
-				transform: translateY(-5px) rotate(-90deg);
-	}
-}
-
 
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
