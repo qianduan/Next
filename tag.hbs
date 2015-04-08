@@ -5,20 +5,10 @@
 <header class="main-header tag-head {{#if tag.image}}" style="background-image: url({{tag.image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
     	<nav class="main-nav clearfix">
 		<div class="inner">
-        <script>
-  (function() {
-    var cx = '002054369585018740412:jm6issx8lkg';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-        '//www.google.com/cse/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
-<gcse:search></gcse:search>
-			<a href="javascript:;">weChat</a>
+            <form id="search" onsubmit="return search()">
+                <input id="search-field">
+                <button type="submit">search</button>
+            </form>
 			<a href="{{@blog.url}}/rss/">Subscribe</a>
 		</div>
 	</nav>
