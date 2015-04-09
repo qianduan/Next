@@ -1265,7 +1265,7 @@ duoshuo
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
-	.main-nav{
+	.main-nav .inner{
 		text-align: center;
 	}
 	.main-nav .inner a {
