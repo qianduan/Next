@@ -38,7 +38,6 @@ html {
    -webkit-text-size-adjust: 100%;
 }
 body { margin: 0; }
-a { background: transparent; }
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 h1 { font-size: 2em; margin: 0.67em 0; }
@@ -209,25 +208,22 @@ h4, h5, h6 {
 }
 
 h1 {
-	font-size: 5rem;
+	font-size: 4rem;
 }
 
 h2 {
-	font-size: 3.6rem;
+	font-size: 3.2rem;
 }
 
 h3 {
-	font-size: 3rem;
+	font-size: 2.8rem;
 }
 
 h4 {
-	font-size: 2.5rem;
+	font-size: 2.2rem;
 }
 
-h5 {
-	font-size: 2rem;
-}
-
+h5,
 h6 {
 	font-size: 2rem;
 }
@@ -248,10 +244,6 @@ p, ul, ol, dl {
 	-o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	margin: 0 0 1.75em 0;
 	text-rendering: geometricPrecision;
-}
-
-ol, ul {
-	padding-left: 3rem;
 }
 
 ol ol, ul ul,
@@ -297,9 +289,9 @@ hr {
 blockquote {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
-	margin: 1.75em 0 1.75em -2.2em;
-	padding: 0 0 0 1.75em;
-	border-left: #4A4A4A 0.4em solid;
+	margin: 1em 0 0 1em;
+	padding: 0 0 0 1em;
+	border-left: #ddd 0.4em solid;
 }
 
 blockquote p {
@@ -538,24 +530,6 @@ margin on the iframe, cause it breaks stuff. */
 .subscribe-button:before {
 	font-size: 9px;
 	margin-right: 6px;
-}
-
-/* Appears in the top right corner of your home page */
-.blog-logo {
-	display: block;
-	float: left;
-	background: none !important;
-	border: none !important;
-}
-
-.blog-logo img {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-	height: 38px;
-	padding: 1px 0 5px 0;
-	width: auto;
 }
 
 .menu-button {
@@ -1171,6 +1145,7 @@ side bar style
 
 .site-footer {
 	overflow: hidden;
+	margin-top: 2em
 }
 .site-footer ol,
 .site-footer ul{
@@ -1207,6 +1182,15 @@ side bar style
 	line-height: 1.4;
 }
 
+/*
+duoshuo
+*/
+
+#ds-thread{
+	padding: 2rem;
+	background-color: #fff;
+	margin: 2rem 0
+}
 /* ==========================================================================
    10. Media Queries - Smaller than 900px
    ========================================================================== */
@@ -1216,35 +1200,21 @@ side bar style
 	blockquote {
 		margin-left: 0;
 	}
-
-	.main-header {
-		-webkit-box-sizing: border-box;
-		-moz-box-sizing: border-box;
-		box-sizing: border-box;
-		height: auto;
-		min-height: 240px;
-		height: 60vh;
-		padding: 15% 0;
+	.main-nav .inner{
+		width: 100%;
 	}
-
-	.archive-template .main-header {
-		min-height: 180px;
-		padding: 10% 0;
+	.main-content{
+		width: 100%;
+		text-align: center;
 	}
-
-	.blog-logo img {
-		padding: 4px 0;
+	.content{
+		width: 100%;
+		margin-right: 0;
+		text-align: left;
 	}
-
-	.page-title {
-		font-size: 4rem;
+	.sidebar{
+		margin: 0 auto;
 	}
-
-	.page-description {
-		font-size: 1.8rem;
-		line-height: 1.5em;
-	}
-
 	.post {
 		font-size: 0.95em
 	}
@@ -1256,34 +1226,18 @@ side bar style
 	hr {
 		margin: 2.4em 0;
 	}
-
-	ol, ul {
-		padding-left: 2em;
+	.widgets-wrap{
+		width: 100%;
 	}
-
-	h1 {
-		font-size: 4.5rem;
-		text-indent: -2px;
+	.footer-widgets .widget{
+		display: none;
+		float: none;
+		margin: 0 auto;
+		text-align: center;
+		padding: 2em 0;
 	}
-
-	h2 {
-		font-size: 3.6rem;
-	}
-
-	h3 {
-		font-size: 3.1rem;
-	}
-
-	h4 {
-		font-size: 2.5rem;
-	}
-
-	h5 {
-		font-size: 2.2rem;
-	}
-
-	h6 {
-		font-size: 1.8rem;
+	.footer-widgets .widget:nth-child(n+2){
+		display: inline-block;
 	}
 
 	.author-profile {
@@ -1321,23 +1275,9 @@ side bar style
 		height: 30vh;
 	}
 
-	.archive-template .main-header {
-		max-height: 20vh;
-		min-height: 160px;
-		padding: 10% 0;
-	}
-
 	.main-nav {
 		padding: 5px;
 		margin-bottom: 2rem;
-	}
-
-	.blog-logo {
-		padding: 5px;
-	}
-
-	.blog-logo img {
-		height: 30px;
 	}
 
 	.menu-button {
