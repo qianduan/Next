@@ -1179,7 +1179,7 @@ side bar style
 	vertical-align: top;
 }
 .copyright{
-	padding: 2rem 0;
+	padding: 2rem 0 2rem 2rem;
 	line-height: 1.4;
 }
 
@@ -1265,8 +1265,16 @@ duoshuo
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
-
+	.main-nav{
+		text-align: center;
+	}
 	.main-nav .inner a {
+		display: none;
+	}
+	.main-nav form{
+		margin: 0 auto
+	}
+	.main-nav button[type=submit]{
 		display: none;
 	}
 	.inner,
