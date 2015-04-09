@@ -180,7 +180,7 @@ body {
 	max-height: 100%;
 	font-family:"Helvetica neue",Helvetica,Tahoma,"lantinghei sc","Microsoft Yahei", sans-serif;
 	font-size: 1.6rem;
-	line-height: 1.6em;
+	line-height: 1.6;
 	color: #3A4145;
 	background: #ECF0F1;
 	-webkit-font-feature-settings: 'kern' 1;
@@ -242,7 +242,7 @@ p, ul, ol, dl {
 	-webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	-moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	-o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-	margin: 0 0 1.75em 0;
+	margin: 0;
 	text-rendering: geometricPrecision;
 }
 
@@ -1089,6 +1089,7 @@ side bar style
 .pagination a {
 	color: #FFF;
 	transition: all 0.2s ease;
+	background: #18BC9C;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -1214,9 +1215,7 @@ duoshuo
 	}
 	.sidebar{
 		margin: 0 auto;
-	}
-	.post {
-		font-size: 0.95em
+		text-align: left;
 	}
 
 	body:not(.post-template) .post-title {
@@ -1228,6 +1227,7 @@ duoshuo
 	}
 	.widgets-wrap{
 		width: 100%;
+		text-align: center;
 	}
 	.footer-widgets .widget{
 		display: none;
@@ -1236,7 +1236,7 @@ duoshuo
 		text-align: center;
 		padding: 2em 0;
 	}
-	.footer-widgets .widget:nth-child(n+2){
+	.footer-widgets .widget:nth-child(n+3){
 		display: inline-block;
 	}
 
@@ -1266,74 +1266,17 @@ duoshuo
 
 @media only screen and (max-width: 500px) {
 
-	.main-header {
-		margin-bottom: 15px;
-		height: 40vh;
+	.main-nav .inner a {
+		display: none;
 	}
-
-	.no-cover.main-header {
-		height: 30vh;
-	}
-
-	.main-nav {
-		padding: 5px;
-		margin-bottom: 2rem;
-	}
-
-	.menu-button {
-		padding: 0 5px;
-		border-radius: 0;
-		border-color: transparent;
-		color: #2e2e2e;
-		background: transparent;
-	}
-	.menu-button:hover {
-		color: #2e2e2e;
-		border-color: transparent;
-		background: none;
-	}
-	body.nav-opened .menu-button {
-		background: none !important;
-		border: transparent !important;
-	}
-
-	.main-nav.overlay a:hover {
-		color: #fff;
-		border-color: transparent;
-		background: transparent;
-	}
-
-	.no-cover .main-nav.overlay {
-		background: none;
-	}
-	.no-cover .main-nav.overlay .menu-button {
-		border: none;
-	}
-
-	.main-nav.overlay .menu-button {
-		border-color: transparent;
-	}
-
-	.nav-title {
-		top: 25px;
-
-	}
-
-	.nav-close {
-		position: absolute;
-		top: 18px;
-	}
-
-	.nav ul {
-		padding: 60px 9% 5%;
-	}
-
 	.inner,
 	.pagination {
 		width: auto;
 		margin: 2rem auto;
 	}
-
+	.sidebar{
+		width: 100%;
+	}
 	.post {
 		width: auto;
 		margin-bottom: 2rem;
@@ -1359,14 +1302,6 @@ duoshuo
 		margin: 1.75em 0;
 	}
 
-	p, ul, ol, dl {
-		font-size: 0.95em;
-		margin: 0 0 2.5rem 0;
-	}
-
-	.page-title {
-		font-size: 3rem;
-	}
 
 	.post-excerpt p {
 		font-size: 0.85em;
@@ -1393,14 +1328,8 @@ duoshuo
 		font-size: 2.1rem;
 	}
 
-	h4 {
-		font-size: 1.9rem;
-	}
-
-	h5 {
-		font-size: 1.8rem;
-	}
-
+	h4,
+	h5,
 	h6 {
 		font-size: 1.8rem;
 	}
