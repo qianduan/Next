@@ -7,8 +7,9 @@
 {{#post}}
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    	<nav class="main-nav clearfix">
+    <nav class="main-nav clearfix">
 		<div class="inner">
+            {{navigation}}
             <form id="search" onsubmit="return search()">
                 <input id="search-field" type="text" placeholder="search">
                 <button type="submit">search</button>
@@ -20,7 +21,6 @@
 		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
 	</div>
-	{{navigation}}
 </header>
 <div class="main-content">
 <main class="content" role="main">

@@ -187,13 +187,7 @@ body {
 	-moz-font-feature-settings: 'kern' 1;
 	-o-font-feature-settings: 'kern' 1;
 	text-rendering: geometricPrecision;
-}
-::-moz-selection {
-	background: #D6EDFF;
-}
-
-::selection {
-	background: #D6EDFF;
+	-webkit-font-smoothing: antialiased;
 }
 
 h1, h2, h3,
@@ -476,23 +470,23 @@ margin on the iframe, cause it breaks stuff. */
 }
 .main-nav .inner form{
 	display: inline-block;
+	margin-right: 2rem;
 }
 .main-nav a {
 	text-decoration: none;
-	margin-left: 2rem;
 	color: #fff;
 }
 /* Navigation */
 
 .nav {
-	height: 5rem;
-	line-height: 5rem;
+	float: left;
 }
 
 .nav ul {
 	list-style: none;
 	counter-reset: item;
 	text-align: center;
+	padding: 0
 }
 .nav li {
 	margin: 0 2rem;
@@ -642,6 +636,9 @@ margin on the iframe, cause it breaks stuff. */
 .post h4{
 	margin:1.6rem 0;
 }
+.post-title{
+	font-weight: normal;
+}
 body:not(.post-template) .post-title {
 	font-size: 3.6rem;
 }
@@ -682,7 +679,7 @@ body:not(.post-template) .post-title {
 .post-meta {
 	display: block;
 	margin:0 0 1.5rem;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	/*line-height: 2.2rem;*/
 }
 
@@ -1162,6 +1159,7 @@ side bar style
 .footer-widgets{
 	background-color:#2C3E50;
 	color: #000;
+	padding: 2rem 0
 }
 .widgets-wrap,.copyright{
 	width: 960px;
@@ -1184,8 +1182,11 @@ side bar style
 	*zoom:1;
 	vertical-align: top;
 }
+.footer-qrcode{
+	margin-top: 1.5rem
+}
 .copyright{
-	padding: 2rem 0 2rem 2rem;
+	padding: 2rem 0 2rem 1rem;
 	line-height: 1.4;
 }
 

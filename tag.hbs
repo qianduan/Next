@@ -3,8 +3,9 @@
 
 {{! If we have a tag cover, display that - else blog cover - else nothing }}
 <header class="main-header tag-head {{#if tag.image}}" style="background-image: url({{tag.image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
-    	<nav class="main-nav clearfix">
+    <nav class="main-nav clearfix">
 		<div class="inner">
+            {{navigation}}
             <form id="search" onsubmit="return search()">
                 <input id="search-field" type="text" placeholder="search">
                 <button type="submit">search</button>
@@ -24,7 +25,6 @@
             </h2>
         </div>
     </div>
-    {{navigation}}
 </header>
 <div class="main-content">
 {{! The main content area on the homepage }}
