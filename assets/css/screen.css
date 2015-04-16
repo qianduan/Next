@@ -636,6 +636,12 @@ margin on the iframe, cause it breaks stuff. */
 	overflow: hidden;
 }
 
+.post p,
+.post h2,
+.post h3,
+.post h4{
+	margin:1.6rem 0;
+}
 body:not(.post-template) .post-title {
 	font-size: 3.6rem;
 }

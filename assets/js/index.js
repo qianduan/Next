@@ -12,8 +12,6 @@
 
         var $postContent = $(".post-content");
         $postContent.fitVids();
-
-        $('.related-posts').ghostRelated();
     });
 
 })(jQuery);
