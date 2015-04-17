@@ -288,11 +288,6 @@ blockquote {
 	border-left: #ddd 0.4em solid;
 }
 
-blockquote p {
-	margin: 0.8em 0;
-	font-style: italic;
-}
-
 blockquote small {
 	display: inline-block;
 	margin: 0.8em 0 0.8em 1.5em;
@@ -794,19 +789,8 @@ body:not(.post-template) .post-title {
 /* Keep images centered, and allow images wider than the main
    text column to break out. */
 .post-content img {
-	display: block;
-	max-width: 126%;
 	height: auto;
 	padding: 0.6em 0;
-	/* Centers an image by (1) pushing its left edge to the
-	   center of its container and (2) shifting the entire image
-	   in the opposite direction by half its own width.
-	   Works for images that are larger than their containers. */
-	position: relative;
-	left: 50%;
-	-webkit-transform: translateX(-50%); /* for Safari and iOS */
-	-ms-transform: translateX(-50%); /* for IE9 */
-	transform: translateX(-50%);
 }
 
 .footnotes {
@@ -1113,7 +1097,7 @@ side bar style
 
 .page-number {
 	display: inline-block;
-	padding: 2px 0;
+	padding: 1.5rem 0;
 	min-width: 100px;
 }
 
