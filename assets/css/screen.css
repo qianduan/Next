@@ -95,7 +95,7 @@ input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 button::-moz-focus-inner,
 input::-moz-focus-inner { border: 0; padding: 0; }
 textarea { overflow: auto; vertical-align: top; }
-table { border-collapse: collapse; border-spacing: 0; }
+table { border-collapse: collapse; border-spacing: 0; border-color: transparent;}
 
 
 /* ==========================================================================
@@ -315,6 +315,7 @@ code, tt {
 	border: #E3EDF3 1px solid;
 	background: #F7FAFB;
 	border-radius: 2px;
+	margin: 0 4px;
 }
 
 pre {
@@ -630,7 +631,8 @@ margin on the iframe, cause it breaks stuff. */
 .post h2,
 .post h3,
 .post h4{
-	margin:1.6rem 0;
+	margin:1.8rem 0;
+	line-height: 1.8;
 }
 .post-title{
 	font-weight: normal;
