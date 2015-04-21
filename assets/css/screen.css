@@ -793,6 +793,7 @@ body:not(.post-template) .post-title {
 .post-content img {
 	height: auto;
 	padding: 0.6em 0;
+	max-width: 100%;
 }
 
 .footnotes {
