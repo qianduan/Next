@@ -303,10 +303,6 @@ blockquote cite {
 
 blockquote cite a { font-weight: normal; }
 
-mark {
-	background-color: #fdffb6;
-}
-
 code, tt {
 	padding: 1px 3px;
 	font-family: Inconsolata, monospace, sans-serif;
@@ -640,6 +636,7 @@ margin on the iframe, cause it breaks stuff. */
 body:not(.post-template) .post-title {
 	font-size: 3.6rem;
 	line-height: 1.5;
+	margin-top: 0;
 }
 
 .post-title a {
