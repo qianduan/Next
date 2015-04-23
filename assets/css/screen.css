@@ -635,7 +635,7 @@ margin on the iframe, cause it breaks stuff. */
 }
 body:not(.post-template) .post-title {
 	font-size: 3.6rem;
-	line-height: 1.5;
+	line-height: 1.4;
 	margin-top: 0;
 }
 
