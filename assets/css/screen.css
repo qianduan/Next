@@ -104,19 +104,19 @@ table { border-collapse: collapse; border-spacing: 0; border-color: transparent;
 
 /* Import the font file with the icons in it */
 @font-face {
-	font-family: "casper-icons";
-	src:url("../fonts/casper-icons.eot");
-	src:url("../fonts/casper-icons.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/casper-icons.woff") format("woff"),
-		url("../fonts/casper-icons.ttf") format("truetype"),
-		url("../fonts/casper-icons.svg#icons") format("svg");
+	font-family: "next-icons";
+	src:url("../fonts/next.eot");
+	src:url("../fonts/next.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/next.woff") format("woff"),
+		url("../fonts/next.ttf") format("truetype"),
+		url("../fonts/next.svg#icons") format("svg");
 	font-weight: normal;
 	font-style: normal;
 }
 
 /* Apply these base styles to all icons */
 [class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: "casper-icons", sans-serif;
+	font-family: "next-icons", sans-serif;
 	speak: none;
 	font-style: normal;
 	font-weight: normal;
@@ -130,38 +130,15 @@ table { border-collapse: collapse; border-spacing: 0; border-color: transparent;
 
 /* Each icon is created by inserting the correct character into the
    content of the :before pseudo element. Like a boss. */
-.icon-ghost:before {
-	content: "\f600";
-}
-.icon-feed:before {
-	content: "\f601";
-}
-.icon-twitter:before {
-	content: "\f602";
-	font-size: 1.1em;
-}
-.icon-google-plus:before {
-	content: "\f603";
-}
-.icon-facebook:before {
-	content: "\f604";
-}
-.icon-arrow-left:before {
-	content: "\f605";
-}
-.icon-stats:before {
-	content: "\f606";
-}
-.icon-location:before {
-	content: "\f607";
-	margin-left: -3px; /* Tracking fix */
-}
-.icon-link:before {
-	content: "\f608";
-}
-.icon-menu:before {
-	content: "\f609";
-}
+.icon-location:before { content: '\e800'; } /* '' */
+.icon-stats:before { content: '\e801'; } /* '' */
+.icon-link:before { content: '\e802'; } /* '' */
+.icon-arrow-left:before { content: '\e808'; } /* '' */
+.icon-arrow-right:before { content: '\e809'; } /* '' */
+.icon-twitter:before { content: '\e80a'; } /* '' */
+.icon-weibo:before { content: '\e80b'; } /* '' */
+.icon-facebook:before { content: '\e80c'; } /* '' */
+.icon-wechat:before { content: '\e80d'; } /* '' */
 
 
 /* ==========================================================================
@@ -912,7 +889,7 @@ side bar style
 	font-weight: 400;
 	margin:0;
 	font-size: 1.8rem;
-	padding: .5rem 0;
+	padding: 1rem 0;
 }
 
 .widget ul,
