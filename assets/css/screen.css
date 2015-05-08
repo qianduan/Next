@@ -934,7 +934,7 @@ side bar style
    ========================================================================== */
 
 .author-profile {
-	padding: 0 15px 5rem 15px;
+	padding: 0 0 2rem;
 	border-bottom: #EBF2F6 1px solid;
 	text-align: center;
 }
@@ -975,7 +975,7 @@ side bar style
 	width: 120px;
 	height: 120px;
 	padding: 3px;
-	margin: -100px auto 0 auto;
+	margin: 3rem auto 0 auto;
 	box-shadow: none;
 }
 
@@ -1213,7 +1213,7 @@ duoshuo
 	}
 
 	.author-profile {
-		padding-bottom: 4rem;
+		padding-bottom: 2rem;
 	}
 
 	.author-profile .author-bio {
@@ -1237,32 +1237,24 @@ duoshuo
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
+	.main-nav{
+		height: .5rem;
+	}
 	.main-nav .inner{
-		text-align: center;
-	}
-	.main-nav .inner a {
-		display: none;
-	}
-	.main-nav form{
-		margin: 0 auto
-	}
-	.main-nav button[type=submit]{
 		display: none;
 	}
 	.inner,
 	.pagination {
 		width: auto;
-		margin: 2rem auto;
+		margin: 0 auto;
 	}
 	.sidebar{
 		width: 100%;
 	}
 	.post {
 		width: auto;
-		margin-bottom: 2rem;
-		margin-left: 16px;
-		margin-right: 16px;
-		padding-bottom: 2rem;
+		margin: 0;
+		padding-bottom: 0;
 		line-height: 1.65em;
 	}
 
@@ -1277,7 +1269,12 @@ duoshuo
 	hr {
 		margin: 1.75em 0;
 	}
-
+	pre {
+		padding: 4px;
+	}
+	pre code{
+		margin: 0;
+	}
 
 	.post-excerpt p {
 		font-size: 0.85em;
@@ -1314,20 +1311,14 @@ duoshuo
 		font-size: 2.5rem;
 	}
 
-	.post-template .post {
-		padding-bottom: 0;
-		margin-bottom: 0;
-	}
-
 	.post-template .site-footer {
 		margin-top: 0;
 	}
 
 	.post-content img {
 		padding: 0;
-		width: calc(100% + 32px); /* expand with to image + margins */
 		min-width: 0;
-		max-width: 112%; /* fallback when calc doesn't work */
+		max-width: 100%; /* fallback when calc doesn't work */
 	}
 
 	.post-meta {
@@ -1378,15 +1369,6 @@ duoshuo
 	.site-footer {
 		margin-top: 3rem;
 	}
-
-	.author-profile {
-		padding-bottom: 2rem;
-	}
-
-	.author-profile .author-image {
-		margin-top: -70px;
-	}
-
 	.author-profile .author-meta span {
 		font-size: 1.4rem;
 	}
