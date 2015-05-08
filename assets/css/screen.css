@@ -727,7 +727,7 @@ body:not(.post-template) .post-title {
    ========================================================================== */
 
 .post-template .post-header {
-   margin-bottom: 3.4rem;
+   margin-bottom: 1.5rem;
 }
 
 .post-template .post-title {
@@ -917,6 +917,8 @@ side bar style
 }
 .give-me-five img{
 	max-width: 100%;
+	padding: 0;
+	margin: 0
 }
 /*widget for sidebar*/
 
@@ -1266,10 +1268,6 @@ duoshuo
 
 	.post-date {
 		display: none;
-	}
-
-	.post-template .post-header {
-		margin-bottom: 2rem;
 	}
 
 	.post-template .post-date {
