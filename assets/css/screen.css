@@ -1077,15 +1077,15 @@ side bar style
 .read-next-story .post {
     padding-top: 3rem;
     padding-bottom: 3rem;
-    margin-bottom: 0;	
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .read-next-story .post:before {
     content: "继续阅读";
     padding: 4px 10px 5px;
     text-transform: uppercase;
-    font-size: 1.1rem;
-    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
     color: rgba(255,255,255,0.8);
     border: rgba(255,255,255,0.5) 1px solid;
     border-radius: 4px;
@@ -1098,6 +1098,7 @@ side bar style
 .read-next-story h2 {
     margin-top: 1rem;
     color: #fff;
+    line-height: 1.6
 }
 
 .read-next-story p {
