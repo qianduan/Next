@@ -1032,7 +1032,6 @@ side bar style
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
-    margin-top: 10rem;
 }
 
 .read-next-story {
@@ -1076,12 +1075,13 @@ side bar style
 }
 
 .read-next-story .post {
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 0;	
 }
 
 .read-next-story .post:before {
-    content: "Read This Next";
+    content: "继续阅读";
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -1092,7 +1092,7 @@ side bar style
     transition: all 0.5s ease;
 }
 .read-next-story.prev .post:before {
-    content: "You Might Enjoy";
+    content: "你可能会喜欢";
 }
 
 .read-next-story h2 {
