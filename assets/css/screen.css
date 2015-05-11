@@ -11,12 +11,14 @@
 	4.  General
 	5.  Single Post
 	6.  Tag Archive
-	7.  Third Party Elements
-	8.  Pagination
-	9.  Footer
-	10. Media Queries (Tablet)
-	11. Media Queries (Mobile)
-	12. Animations
+	7.  Read Next
+	8.  Third Party Elements
+	9.  Pagination
+	10.  Footer
+	11. Media Queries (Tablet)
+	12. Media Queries (Mobile)
+	13. Animations
+	14. code highlight
 
 */
 
@@ -592,10 +594,6 @@ margin on the iframe, cause it breaks stuff. */
 	margin:0 auto 2rem;
 	padding: 2rem;
 	word-wrap: break-word;
-	-moz-hyphens: auto;
-	-ms-hyphens: auto;
-	-webkit-hyphens: auto;
-	hyphens: auto;
 	background-color: #fff;
 	overflow: hidden;
 }
@@ -774,6 +772,7 @@ body:not(.post-template) .post-title {
 .footnotes {
 	font-style: italic;
 	font-size: 1.3rem;
+	line-height: 1.6em
 }
 
 .footnotes li {
@@ -782,6 +781,9 @@ body:not(.post-template) .post-title {
 
 .footnotes p {
 	margin: 0;
+}
+.footnotes p a:last-child {
+    text-decoration: none;
 }
 
 
@@ -856,9 +858,14 @@ body:not(.post-template) .post-title {
 }
 
 .post-footer .share a:hover {
-	color: #50585D;
+	color: #55acee;
 }
-
+.post-footer .share .icon-facebook:hover {
+	content: #3b5998
+}
+.post-footer .share .icon-weibo:hover {
+	color: #dd4b39
+}
 /*
 side bar style
 
@@ -874,12 +881,7 @@ side bar style
  */
 
 .widget {
-	
 	font-size: 14px;
-	-webkit-hyphens: auto;
-	-moz-hyphens:    auto;
-	-ms-hyphens:     auto;
-	hyphens:         auto;
 	margin:20px 0 0;
 	padding:0;
 	word-wrap: break-word;
@@ -1017,9 +1019,130 @@ side bar style
 .archive-template .author-profile .author-meta {
 	display: none;
 }
+/* ==========================================================================
+   7. Read More - Next/Prev Post Links
+   ========================================================================== */
+
+.read-next {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    margin-top: 10rem;
+}
+
+.read-next-story {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-width: 50%;
+    text-decoration: none;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    background: #222 no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+}
+.read-next-story:hover:before {
+    background: rgba(0,0,0,0.8);
+    transition: all 0.2s ease;
+}
+.read-next-story:hover .post:before {
+    color: #222;
+    background: #fff;
+    transition: all 0.2s ease;
+}
+
+.read-next-story:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.7);
+    transition: all 0.5s ease;
+}
+
+.read-next-story .post {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.read-next-story .post:before {
+    content: "Read This Next";
+    padding: 4px 10px 5px;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+    color: rgba(255,255,255,0.8);
+    border: rgba(255,255,255,0.5) 1px solid;
+    border-radius: 4px;
+    transition: all 0.5s ease;
+}
+.read-next-story.prev .post:before {
+    content: "You Might Enjoy";
+}
+
+.read-next-story h2 {
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.read-next-story p {
+    margin: 0;
+    color: rgba(255,255,255,0.8);
+}
+
+/* Special styles for posts with no cover images */
+.read-next-story.no-cover {
+    background: #f5f8fa;
+}
+
+.read-next-story.no-cover:before {
+    display: none;
+}
+
+.read-next-story.no-cover .post:before {
+    color: rgba(0,0,0,0.5);
+    border-color: rgba(0,0,0,0.2);
+}
+
+.read-next-story.no-cover h2 {
+    color: rgba(0,0,0,0.8);
+}
+
+.read-next-story.no-cover p {
+    color: rgba(0,0,0,0.5);
+}
+
+/* if there are two posts without covers, put a border between them */
+.read-next-story.no-cover + .read-next-story.no-cover {
+    border-left: rgba(0,0,100,0.04) 1px solid;
+}
+
+/* Correctly position site-footer when next to the .read-next container */
+.read-next + .site-footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+}
 
 /* ==========================================================================
-   7. Third Party Elements - Embeds from other services
+   8. Third Party Elements - Embeds from other services
    ========================================================================== */
 
 /* Github */
@@ -1040,7 +1163,7 @@ side bar style
 }
 
 /* ==========================================================================
-   8. Pagination - Tools to let you flick between pages
+   9. Pagination - Tools to let you flick between pages
    ========================================================================== */
 
 /* The main wrapper for our pagination links */
@@ -1109,7 +1232,7 @@ side bar style
 
 
 /* ==========================================================================
-   9. Footer - The bottom of every page
+   10. Footer - The bottom of every page
    ========================================================================== */
 
 .site-footer {
@@ -1165,7 +1288,7 @@ duoshuo
 	margin: 2rem 0
 }
 /* ==========================================================================
-   10. Media Queries - Smaller than 900px
+   11. Media Queries - Smaller than 900px
    ========================================================================== */
 
 @media only screen and (max-width: 900px) {
@@ -1228,12 +1351,28 @@ duoshuo
 		font-size: 1.3rem;
 	}
 
+	.read-next {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin-top: 4rem;
+    }
 
+    .read-next p {
+        display: none;
+    }
+
+    .read-next-story.no-cover + .read-next-story.no-cover {
+        border-top: rgba(0,0,100,0.06) 1px solid;
+        border-left: none;
+    }
 }
 
 
 /* ==========================================================================
-   11. Media Queries - Smaller than 500px
+   12. Media Queries - Smaller than 500px
    ========================================================================== */
 
 @media only screen and (max-width: 500px) {
@@ -1376,12 +1515,20 @@ duoshuo
 	.archive-template .main-header .page-description {
 		display: none;
 	}
+	.read-next {
+        margin-top: 2rem;
+        margin-bottom: -37px;
+    }
+
+    .read-next .post {
+        width: 100%;
+    }
 
 }
 
 
 /* ==========================================================================
-   12. Animations
+   13. Animations
    ========================================================================== */
 
 /* Used to fade in title/desc on the home page */
@@ -1412,7 +1559,7 @@ duoshuo
 
 
 /* ==========================================================================
-   13. code highlight, use highlight.js
+   14. code highlight, use highlight.js
    ========================================================================== */
 .hljs {
   display: block;
