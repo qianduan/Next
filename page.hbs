@@ -10,11 +10,7 @@
     <nav class="main-nav clearfix">
 		<div class="inner">
 			{{navigation}}
-            <form id="search" onsubmit="return search()">
-                <input id="bdcsMain" type="text" placeholder="search">
-                <button type="submit">search</button>
-            </form>
-			<a href="{{@blog.url}}/rss/">Subscribe</a>
+            {{> topbar}}
 		</div>
 	</nav>
 	<div class="main-header-content">
