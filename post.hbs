@@ -68,7 +68,7 @@
 
             <section class="share">
                 <h4>分享</h4>
-                <a class="icon-twitter" href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
+                <a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
                     onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
                     <span class="hidden">Twitter</span>
                 </a>
@@ -115,27 +115,6 @@
     })();
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-</main><aside class="sidebar">
-{{!-- for sidebar --}}
-	<div class="give-me-five"><a href="http://100offer.com/join/cha?utm_source=qianduan.net&utm_medium=dis&utm_campaign=cha" target="_blank"><img src="http://feimg.qiniudn.com/1002015r.jpg" alt=""></a>
-	</div>
-    <div class="widget">
-        <h3 class="widget-title">热门文章</h3>
-        <div class="widget-box">
-            <ul>
-                <li><a href="http://www.qianduan.net/css-to-achieve-the-vertical-center-of-the-five-kinds-of-methods/" title="CSS实现垂直居中的5种方法" target="_blank">CSS实现垂直居中的5种方法</a></li>
-                <li><a href="http://www.qianduan.net/zen-coding-a-new-way-to-write-html-code/" title="Zen Coding: 一种快速编写HTML/CSS代码的方法" target="_blank">Zen Coding: 一种快速编写HTML/CSS代码的方法</a></li>
-                <li><a href="http://www.qianduan.net/50-amazing-admin-management-templates/" title="50个高端大气上档次的管理后台界面模板" target="_blank">50个高端大气上档次的管理后台界面模板</a></li>
-                <li><a href="http://www.qianduan.net/essential-to-sublime-the-text-2-plugins/" title="一些必不可少的Sublime Text 2插件" target="_blank">一些必不可少的Sublime Text 2插件</a></li>
-                <li><a href="http://www.qianduan.net/high-performance-css3-animations/" title="高性能 CSS3 动画" target="_blank">高性能 CSS3 动画</a></li>
-                <li><a href="http://www.qianduan.net/task-master-gulp-lint/" title="[Task Master] gulp-lint" target="_blank">[Task Master] gulp-lint</a></li>
-                <li><a href="http://www.qianduan.net/qianduan-redesign/" title="前端观察又改版" target="_blank">前端观察又改版</a></li>
-                <li><a href="http://www.qianduan.net/meta-tags-list/" title="meta标签常用属性整理" target="_blank">meta标签常用属性整理</a></li>
-                <li><a href="http://www.qianduan.net/html5-differences-in-the-div-section-article/" title="HTML5 中 div section article 的区别" target="_blank">HTML5 中 div section article 的区别</a></li>
-                <li><a href="http://www.qianduan.net/pseudo-elements/" title="利用伪元素仿苹果手机官网导航" target="_blank">利用伪元素仿苹果手机官网导航</a></li>
-            </ul>
-        </div>
-    </div>
-</aside>
+</main>{{> aside}}
 </div>
 {{/post}}
