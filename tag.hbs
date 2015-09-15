@@ -3,12 +3,7 @@
 
 {{! If we have a tag cover, display that - else blog cover - else nothing }}
 <header class="main-header tag-head {{#if tag.image}}" style="background-image: url({{tag.image}}){{else}}{{#if @blog.cover}}" style="background-image: url({{@blog.cover}}){{else}}no-cover{{/if}}{{/if}}">
-    <nav class="main-nav clearfix">
-    	<div class="inner">
-            {{navigation}}
-            {{> topbar}}
-		</div>
-	</nav>
+{{navigation}}
     <div class="vertical">
         <div class="main-header-content inner">
             <h1 class="page-title">{{tag.name}}</h1>

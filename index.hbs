@@ -2,12 +2,7 @@
 {{! The tag above means - insert everything in this file into the {body} of the default.hbs template }}
 {{! The big featured header }}
 <header class="main-header">
-	<nav class="main-nav clearfix">
-		<div class="inner">
-            {{navigation}}
-            {{> topbar}}
-		</div>
-	</nav>
+{{navigation}}
 	<div class="main-header-content">
 		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}

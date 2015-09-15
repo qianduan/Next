@@ -7,12 +7,7 @@
 {{#post}}
 
 <header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-    <nav class="main-nav clearfix">
-		<div class="inner">
-			{{navigation}}
-            {{> topbar}}
-		</div>
-	</nav>
+{{navigation}}
 	<div class="main-header-content">
 		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
