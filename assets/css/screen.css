@@ -164,6 +164,7 @@ body {
 	line-height: 1.6;
 	color: #3A4145;
 	background: #ECF0F1;
+	font-weight: 400;
 	-webkit-font-feature-settings: 'kern' 1;
 	-moz-font-feature-settings: 'kern' 1;
 	-o-font-feature-settings: 'kern' 1;
@@ -533,7 +534,6 @@ margin on the iframe, cause it breaks stuff. */
 	word-wrap: break-word;
 	background-color: #fff;
 	overflow: hidden;
-	font-weight: 200;
 }
 
 .post p,
@@ -845,7 +845,6 @@ side bar style
 .widget li{
 	padding: .5rem 0;
 	margin: 0;
-	font-weight: 200;
 }
 
 .widget li > ul,
@@ -928,7 +927,6 @@ side bar style
 .author-bio {
 	font-size: 1.8rem;
 	line-height: 1.5em;
-	font-weight: 200;
 	color: #50585D;
 	text-indent: 0;
 	width: 960px;
@@ -1213,7 +1211,6 @@ side bar style
 .copyright{
 	padding: 2rem 0 2rem 1rem;
 	line-height: 1.4;
-	font-weight: 200;
 }
 
 /*
@@ -1459,7 +1456,6 @@ duoshuo
         width: 100%;
     }
 }
-
 
 /* ==========================================================================
    13. Animations
