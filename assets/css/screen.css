@@ -820,7 +820,7 @@ side bar style
 
 .widget {
 	font-size: 14px;
-	margin:20px 0 0;
+	margin:0 0 20px;
 	padding:0;
 	word-wrap: break-word;
 }
@@ -865,6 +865,7 @@ side bar style
 
 .sidebar .widget{
 	background-color: #fff;
+	margin-bottom: 20px;
 }
 .sidebar .widget .widget-title{
 	border-bottom: 1px solid #ECF0F1;
@@ -1231,6 +1232,17 @@ duoshuo
 /* ==========================================================================
    11. Media Queries - Smaller than 900px
    ========================================================================== */
+@media only screen and (min-width: 1400px) {
+	.main-content{
+		width: 1160px;
+	}
+	.content{
+		width: 820px;
+	}
+	.post{
+		padding: 2rem 6rem;
+	}
+}
 
 @media only screen and (max-width: 900px) {
 
