@@ -1233,7 +1233,7 @@ duoshuo
    11. Media Queries - Smaller than 900px
    ========================================================================== */
 @media only screen and (min-width: 1400px) {
-	.main-content{
+	.main-content,.widgets-wrap, .copyright,.main-nav .inner{
 		width: 1160px;
 	}
 	.content{
@@ -1241,6 +1241,11 @@ duoshuo
 	}
 	.post{
 		padding: 2rem 6rem;
+	}
+	.page-title{
+		height: 15rem;
+		line-height: 15rem;
+		font-size: 6rem;
 	}
 }
 
