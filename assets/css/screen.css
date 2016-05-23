@@ -750,10 +750,11 @@ body:not(.post-template) .post-title {
 	list-style: none;
 	font-size: 1.4rem;
 	line-height: 1;
-	font-style: italic;
 	color: #9EABB3;
 }
-
+.author-meta > span:before{
+	margin-right: .5em;
+}
 .author-meta a {
 	color: #9EABB3;
 }
