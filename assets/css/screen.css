@@ -880,6 +880,11 @@ side bar style
 	height:44px;
 	overflow:hidden;
 }
+.widget.widget-grid li img{
+	width:100%;
+	height:100%;
+	object-fit:contain;
+}
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
