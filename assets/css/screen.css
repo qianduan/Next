@@ -871,6 +871,15 @@ side bar style
 	border-bottom: 1px solid #ECF0F1;
 	text-indent: 2rem
 }
+.widget.widget-grid li{
+	padding:0;
+	display:inline-block;
+	vertical-align:top;
+	margin:0 10px 10px 0;
+	width:44px;
+	height:44px;
+	overflow:hidden;
+}
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
