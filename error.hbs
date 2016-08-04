@@ -94,72 +94,29 @@ pre {
 	border-radius: 0.3em;
 }
 
-.token.comment,
-.token.prolog,
-.token.doctype,
-.token.cdata {
-	color: #93a1a1; /* base1 */
+/* Solarized Green */
+.keyword {
+  color: #859900;
 }
 
-.token.punctuation {
-	color: #586e75; /* base01 */
+/* Solarized Cyan */
+.number,
+.string {
+  color: #2aa198;
 }
 
-.namespace {
-	opacity: .7;
+/* Solarized Blue */
+.title,
+.name{
+  color: #268bd2;
+}
+a,a:visited,.link {
+  color: #cb4b16;
 }
 
-.token.property,
-.token.tag,
-.token.boolean,
-.token.number,
-.token.constant,
-.token.symbol,
-.token.deleted {
-	color: #268bd2; /* blue */
-}
-
-.token.selector,
-.token.attr-name,
-.token.string,
-.token.char,
-.token.builtin,
-.token.url,
-.token.inserted {
-	color: #2aa198; /* cyan */
-}
-
-.token.entity {
-	color: #657b83; /* base00 */
-	background: #eee8d5; /* base2 */
-}
-
-.token.atrule,
-.token.attr-value,
-.token.keyword {
-	color: #859900; /* green */
-}
-
-.token.function {
-	color: #b58900; /* yellow */
-}
-
-.token.regex,
-.token.important,
-.token.variable {
-	color: #cb4b16; /* orange */
-}
-
-.token.important,
-.token.bold {
-	font-weight: bold;
-}
-.token.italic {
-	font-style: italic;
-}
-
-.token.entity {
-	cursor: help;
+/* Solarized Red */
+.built_in {
+  color: #dc322f;
 }
 
 @media only screen and (max-width: 500px) {
@@ -173,13 +130,12 @@ pre {
 <body>
 <div class="content">
 <pre><code>
-<span class="token keyword">override</span> <span class="token function">func</span> request<span class="token punctuation">(){</span>
-	<span class="token keyword">if let</span> status <span class="token operator">==</span> <span class="token string">"{{code}}"</span> <span class="token punctuation">{</span>
-		<span class="token function">print</span><span class="token punctuation">(</span><span class="token punctuation">"</span><span class="token variable">\(status)</span> {{message}} <span class="token punctuation">"</span><span class="token punctuation">)</span>
-	
-		<span class="token function">return</span> <a href="//www.qianduan.net" title="Back Home"><span class="token variable">https://www.qianduan.net</span></a>
-	<span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
+<span class="function"><span class="keyword">function</span> <span class="title">errorHandler</span>(<span class="params">req</span>)</span>{
+  <span class="keyword">if</span> (req.status == <span class="number">{{code}}</span>) {
+    <span class="built_in">console</span>.log(<span class="string">"{{message}}"</span>);
+    <span class="built_in">window</span>.location.href = <span class="link"><a href="//www.qianduan.net">//www.qianduan.net</a></span>;
+  }
+}
 </code></pre>
 </div>
 </body>
