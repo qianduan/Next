@@ -856,6 +856,9 @@ side bar style
 	padding: 1rem;
 	background-color: #fff;
 }
+.give-me-five.waiting{
+	font-size:3rem;
+}
 .give-me-five img{
 	max-width: 100%;
 	padding: 0;
