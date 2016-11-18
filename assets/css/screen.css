@@ -859,6 +859,9 @@ side bar style
 .give-me-five.waiting{
 	font-size:3rem;
 }
+.give-me-five.waiting .description{
+	font-size: 1.5rem;
+}
 .give-me-five img{
 	max-width: 100%;
 	padding: 0;
