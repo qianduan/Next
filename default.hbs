@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html ⚡>
 <head>
-{{! Document Settings }}
+
+{{!-- Document Settings --}}
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-{{! Page Meta }}
 
+{{!-- Page Meta --}}
 <title>{{meta_title}}</title>
 <meta name="description" content="{{meta_description}}" />
+
+{{!-- Mobile Meta --}}
 <meta name="HandheldFriendly" content="True" />
 <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0" />
-<meta name="MobileOptimized" content="320">
+{{!-- Brand icon --}}
+<link rel="shortcut icon" href="{{asset "favicon.png"}}">
 <meta name="theme-color" content="#2c3e50">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="google-site-verification" content="ERxwvLrqp2lRLHjmDo-9E1LNehbiI3l7FPRTzRn-_oA" />
-<link rel="shortcut icon" href="{{asset "favicon.png"}}">
 
 {{! Styles'n'Scripts }}
 <link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
@@ -25,7 +28,7 @@
 </head>
 <body class="{{body_class}} nav-closed">
 	<div class="site-wrapper">
-		{{! Everything else gets inserted here }}
+		{{!-- Everything else gets inserted here --}}
 		{{{body}}}
 		<footer class="site-footer clearfix">
 			<section class="clearfix footer-widgets">
@@ -82,9 +85,9 @@
 			</section>
 		</footer>
 	</div>
-{{! Ghost outputs important scripts and data with this tag }}
+{{!-- Ghost outputs important scripts and data with this tag --}}
 {{ghost_foot}}
-{{! The main JavaScript file for Next theme }}
+{{!-- The main JavaScript file for Next theme --}}
 <script>
 var _hmt = _hmt || [];
 (function() {
