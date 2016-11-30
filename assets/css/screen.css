@@ -973,7 +973,7 @@ side bar style
 
 /* Turn off meta for page2+ to make room for extra
    pagination prev/next links */
-.archive-template .author-profile .author-meta {
+.paged .author-profile .author-meta {
 	display: none;
 }
 /* ==========================================================================
@@ -1185,12 +1185,12 @@ side bar style
 }
 
 /* On page2+ make all the headers smaller */
-.archive-template .main-header {
+.paged .main-header {
 	max-height: 30vh;
 }
 
 /* On page2+ show extra pagination controls at the top of post list */
-.archive-template .extra-pagination {
+.paged .extra-pagination {
 	display: block;
 }
 
@@ -1485,7 +1485,7 @@ duoshuo
 		font-size: 1.4rem;
 	}
 
-	.archive-template .main-header .page-description {
+	.paged .main-header .page-description {
 		display: none;
 	}
 	.read-next {
