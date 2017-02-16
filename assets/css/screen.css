@@ -1610,6 +1610,17 @@ duoshuo
 .hljs-strong {
   font-weight: bold;
 }
+.partner{
+	text-align: center;
+	background-color: #fff;
+	padding: 1em;
+	margin-top: 2rem;
+	font-size: 1.2rem;
+}
+.partner img{
+	margin: 0 auto 1em;
+
+}
 /* ==========================================================================
    End of file. Animations should be the last thing here. Do not add stuff
    below this point, or it will probably fuck everything up.
