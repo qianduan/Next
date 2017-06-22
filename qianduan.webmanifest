@@ -1,7 +1,7 @@
 {
 	"short_name": "前端观察",
 	"name": "前端观察官方网站",
-	"display": "standalone",
+	"start_url": "./?utm_source=web_app_manifest",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -34,7 +34,8 @@
 			"type": "image/svg"
 		}
 	],
-	"start_url": ".",
+	"display": "standalone",
 	"theme_color": "#2c3e50",
-	"background_color": "#ECF0F1"
+	"background_color": "#ECF0F1",
+	"orientation": "portrait" 
 }
