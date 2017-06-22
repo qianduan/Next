@@ -1,7 +1,7 @@
 {
 	"short_name": "前端观察",
 	"name": "前端观察官方网站",
-	"start_url": "./?utm_source=web_app_manifest",
+	"start_url": "/",
 	"icons": [
 		{
 			"src": "favicon.ico",
