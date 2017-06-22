@@ -24,7 +24,25 @@
 			{{content}}
 		</section>
 		<footer class="post-footer">
+			<section class="share">
+				<span class="share-title">分享</span>
+				<a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+					onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+					<span class="hidden">Twitter</span>
+				</a>
+				<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+					onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+					<span class="hidden">Facebook</span>
+				</a>
+				<a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?title={{encode title}}&amp;url={{url absolute="true"}}"
+					onclick="window.open(this.href, 'weibo-share','width=580,height=296');return false;">
+					<span class="hidden">新浪微博</span>
+				</a>
+
+			</section>
+			
 		{{! Everything inside the #author tags pulls data from the author }}
+
 		{{#author}}
 			<div class="author-section">
 			{{#if image}}
@@ -50,22 +68,6 @@
 			</div>
 		{{/author}}
 
-			<section class="share">
-				<h4>分享</h4>
-				<a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-					onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-					<span class="hidden">Twitter</span>
-				</a>
-				<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-					onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-					<span class="hidden">Facebook</span>
-				</a>
-				<a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?title={{encode title}}&amp;url={{url absolute="true"}}"
-					onclick="window.open(this.href, 'weibo-share','width=580,height=296');return false;">
-					<span class="hidden">新浪微博</span>
-				</a>
-
-			</section>
 		</footer>
 
 	</article>

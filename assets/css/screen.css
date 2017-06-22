@@ -406,7 +406,6 @@ iframe{
 .post h3,
 .post h4{
 	margin:2rem 0 1rem;
-	line-height: 1.8;
 }
 .post-title{
 	font-weight: normal;
@@ -467,55 +466,11 @@ iframe{
 	text-decoration: underline;
 }
 
-.user-meta {
-	position: relative;
-	padding: 0.3rem 40px 0 100px;
-	min-height: 77px;
-}
-
 .post-date {
 	display: inline-block;
 	margin-left: 8px;
 	white-space: nowrap;
 }
-
-.user-image {
-	position: absolute;
-	top: 0;
-	left: 0;
-}
-
-.user-name {
-	display: block;
-	font-weight: 700;
-}
-
-.user-bio {
-	display: block;
-	max-width: 440px;
-	font-size: 1.4rem;
-	line-height: 1.5em;
-}
-
-.publish-meta {
-	position: absolute;
-	top: 0;
-	right: 0;
-	padding: 4.3rem 0 4rem 0;
-	text-align: right;
-}
-
-.publish-heading {
-	display: block;
-	font-weight: 700;
-}
-
-.publish-date {
-	display: block;
-	font-size: 1.4rem;
-	line-height: 1.5em;
-}
-
 
 /* ==========================================================================
    5. Single Post - When you click on an individual post
@@ -533,13 +488,6 @@ iframe{
 	padding: 0;
 	margin: 0;
 	border: none;
-}
-
-/* Stop elements, such as img wider than the post content, from
-   creating horizontal scroll - slight hack due to imperfections
-   with browser width % calculations and rounding */
-.post-template .content {
-	overflow: hidden;
 }
 
 /* Tweak the .post wrapper style */
@@ -563,16 +511,17 @@ iframe{
 
 /* The author credit area after the post */
 .post-footer {
-	margin: 1rem 0 0 0;
+	margin: 2rem 0 0 0;
 	overflow: hidden;
 }
 .author-section{
 	display: flex;
-	background: #9EABB3;
+	background: #ECF0F1;
 	padding: 1rem;
 }
 .author-section .author-image{
 	width: 100px;
+	margin-top: 1rem;
 }
 .author-section .author{
 	flex: 1;
@@ -623,8 +572,17 @@ iframe{
 .post-footer .share {
 	text-align: right;
 	margin-top: 2rem;
+	border-bottom: 1px solid #ECF0F1;
+	padding-bottom: 2rem;
 }
 
+.post-footer .share .share-title {
+	font-size: 1.8rem;
+	font-weight: bold;
+	margin-right: 1rem;
+	display: inline-block;
+	color:#2C3E50;
+}
 .post-footer .share a {
 	font-size: 1.8rem;
 	display: inline-block;
@@ -737,7 +695,6 @@ side bar style
 
 .author-image {
 	text-align: center;
-	padding: 0 auto;
 }
 
 .author-image .img {
@@ -745,7 +702,6 @@ side bar style
 	margin: 0 auto;
 	width: 80px;
 	height: 80px;
-	border-radius: 100%;
 	overflow: hidden;
 	padding: 6px;
 	background: #fff;
@@ -754,6 +710,7 @@ side bar style
 	background-size: cover;
 	background-position: center center;
 	border-radius: 100%;
+	box-sizing: border-box;
 }
 .author-title {
 	margin: 1.5rem 0 1rem;
@@ -912,11 +869,6 @@ side bar style
 	min-width: 25px;
 }
 
-/* Pastebin */
-.content .embedPastebin {
-	margin-bottom: 1.75em;
-}
-
 /* ==========================================================================
    9. Pagination - Tools to let you flick between pages
    ========================================================================== */
@@ -1005,7 +957,7 @@ side bar style
 	padding: 2rem 0;
 	display: flex;
 }
-.widgets-wrap,.copyright{
+.footer-widgets,.copyright{
 	width: 960px;
 	margin: 0 auto;
 	overflow: hidden;
@@ -1050,7 +1002,7 @@ disqus
    11. Media Queries - Smaller than 900px
    ========================================================================== */
 @media only screen and (min-width: 1400px) {
-	.main-content,.widgets-wrap, .copyright,.main-nav .inner{
+	.main-content,.footer-widgets, .copyright,.main-nav .inner{
 		width: 1160px;
 	}
 	.content{
@@ -1095,13 +1047,12 @@ disqus
 	hr {
 		margin: 2.4em 0;
 	}
-	.widgets-wrap{
+	.footer-widgets{
 		width: 100%;
 		text-align: center;
 	}
 	.footer-widgets .widget{
 		display: none;
-		float: none;
 		margin: 0 auto;
 		text-align: center;
 		padding: 2em 0;
