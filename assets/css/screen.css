@@ -933,15 +933,14 @@ side bar style
 
 .site-footer {
 	overflow: hidden;
-	margin-top: 2em
+	margin-top: 2em;
+	background-color:#2C3E50;
 }
 .site-footer ol,
 .site-footer ul{
-	list-style-type: none;
 	padding-left: 0;
 }
 .footer-widgets{
-	background-color:#2C3E50;
 	color: #000;
 	padding: 2rem 0;
 	display: flex;
