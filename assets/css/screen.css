@@ -204,13 +204,13 @@ h6 {
 }
 
 a {
-	color: #18BC9C;
+	color: #1F7A65;
 	transition: color 0.3s ease;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #18BC9C;
+	color: #1F7A65;
 }
 
 p, ul, ol, dl {
@@ -556,7 +556,7 @@ body:not(.post-template) .post-title {
 	color:#141412;
 }
 .post-title a:hover{
-	color: #18BC9C;
+	color: #1F7A65;
 }
 .post-excerpt p {
 	margin: 0;
@@ -1130,7 +1130,7 @@ side bar style
 .pagination a {
 	color: #FFF;
 	transition: all 0.2s ease;
-	background: #18BC9C;
+	background: #1F7A65;
 }
 
 /* Push the previous/next links out to the left/right */
@@ -1202,6 +1202,12 @@ side bar style
 .widgets-wrap,.copyright{
 	width: 960px;
 	margin: 0 auto;
+}
+.footer-widgets a,.footer-widgets a:visited{
+	color: #0D8;
+}
+.copyright a,.copyright a:visited{
+	color: #1F6A64;
 }
 .footer-widgets .widget{
 	float: left;
