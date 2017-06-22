@@ -1,11 +1,9 @@
-<nav class="main-nav clearfix">
+<nav class="main-nav">
 	<div class="inner">
 		<div class="nav">
-		    <ul>
-		        {{#foreach navigation}}
-		            <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}" role="presentation"><a href="{{url absolute="true"}}">{{label}}</a></li>
-		        {{/foreach}}
-		    </ul>
+	        {{#foreach navigation}}
+	            <a role="presentation" class="nav-item nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
+	        {{/foreach}}
 		</div>
 		<a href="{{@blog.url}}/rss/">Subscribe</a>
 	</div>

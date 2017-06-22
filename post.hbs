@@ -16,23 +16,17 @@
 <div class="main-content">
 <main class="content" role="main">
 	<article class="{{post_class}}">
-
-		<header class="post-header">
-			<h1 class="post-title">{{title}}</h1>
-			<section class="post-meta">
-				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
-			</section>
-		</header>
-
+		<h1 class="post-title">{{title}}</h1>
+		<section class="post-meta">
+			<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
+		</section>
 		<section class="post-content">
 			{{content}}
 		</section>
-
 		<footer class="post-footer">
-
 		{{! Everything inside the #author tags pulls data from the author }}
 		{{#author}}
-
+			<div class="author-section">
 			{{#if image}}
 			<figure class="author-image">
 				<a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
@@ -53,7 +47,7 @@
 					{{#if twitter}}<span class="author-twitter icon-twitter"><a href="{{twitter_url}}">{{twitter}}</a></span>{{/if}}
 				</div>
 			</section>
-
+			</div>
 		{{/author}}
 
 			<section class="share">

@@ -1,151 +1,4 @@
-/* ==========================================================================
-   Table of Contents
-   ========================================================================== */
-
-/*
-
-	0.  Normalize
-	1.  Icons
-	2.  General
-	3.  Utilities
-	4.  General
-	5.  Single Post
-	6.  Tag Archive
-	7.  Read Next
-	8.  Third Party Elements
-	9.  Pagination
-	10.  Footer
-	11. Media Queries (Tablet)
-	12. Media Queries (Mobile)
-	13. Animations
-	14. code highlight
-
-*/
-
-/* ==========================================================================
-   0. Normalize.css v2.1.3 | MIT License | git.io/normalize | (minified)
-   ========================================================================== */
-
-article, aside, details,
-figcaption, figure,
-footer, header, hgroup,
-main, nav, section,
-summary { display: block; }
-audio, canvas, video { display: inline-block; }
-audio:not([controls]) { display: none; height: 0; }
-[hidden], template { display: none; }
-html {
-	font-family:sans-serif;
-   -ms-text-size-adjust: 100%;
-   -webkit-text-size-adjust: 100%;
-}
-a:focus { outline: thin dotted; }
-a:active, a:hover { outline: 0; }
-h1 { font-size: 2em; margin: 0.67em 0; }
-abbr[title] { border-bottom: 1px dotted; }
-b, strong { font-weight: 700; }
-dfn { font-style: italic; }
-hr {
-   -moz-box-sizing: content-box;
-   box-sizing: content-box;
-   height: 0;
-}
-mark { background: #FF0; color: #000; }
-code, kbd, pre,
-samp { font-family: monospace, serif; font-size: 1em; }
-pre { white-space: pre-wrap; }
-q { quotes: "\201C" "\201D" "\2018" "\2019"; }
-small { font-size: 80%; }
-sub, sup {
-   font-size: 75%;
-   line-height: 0;
-   position: relative;
-   vertical-align: baseline;
-}
-sup { top: -0.5em; }
-sub { bottom: -0.25em; }
-img { border: 0; }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
-fieldset {
-   border: 1px solid #c0c0c0;
-   margin: 0 2px;
-   padding: 0.35em 0.625em 0.75em;
-}
-legend { border: 0; padding: 0; }
-button, input, select,
-textarea { font-family: inherit; font-size: 100%; margin: 0; }
-button, input { line-height: normal; }
-button, select { text-transform: none; }
-button, html input[type="button"],
-input[type="reset"], input[type="submit"] {
-   -webkit-appearance: button;
-   cursor: pointer;
-}
-button[disabled], html input[disabled] { cursor: default; }
-input[type="checkbox"],
-input[type="radio"] { box-sizing: border-box; padding: 0; }
-input[type="search"] {
-   -webkit-appearance: textfield;
-   -moz-box-sizing: content-box;
-   -webkit-box-sizing: content-box;
-   box-sizing: content-box;
-}
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
-button::-moz-focus-inner,
-input::-moz-focus-inner { border: 0; padding: 0; }
-textarea { overflow: auto; vertical-align: top; }
-table { border-collapse: collapse; border-spacing: 0; border-color: transparent;}
-
-
-/* ==========================================================================
-   1. Icons - Sets up the icon font and respective classes
-   ========================================================================== */
-
-/* Import the font file with the icons in it */
-@font-face {
-	font-family: "next-icons";
-	src:url("../fonts/next.eot");
-	src:url("../fonts/next.eot?#iefix") format("embedded-opentype"),
-		url("../fonts/next.woff") format("woff"),
-		url("../fonts/next.ttf") format("truetype"),
-		url("../fonts/next.svg#icons") format("svg");
-	font-weight: normal;
-	font-style: normal;
-}
-
-/* Apply these base styles to all icons */
-[class^="icon-"]:before, [class*=" icon-"]:before {
-	font-family: "next-icons", sans-serif;
-	speak: none;
-	font-style: normal;
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	text-decoration: none !important;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-/* Each icon is created by inserting the correct character into the
-   content of the :before pseudo element. Like a boss. */
-.icon-location:before { content: '\e800'; } /* '' */
-.icon-stats:before { content: '\e801'; } /* '' */
-.icon-link:before { content: '\e802'; } /* '' */
-.icon-arrow-left:before { content: '\e808'; } /* '' */
-.icon-arrow-right:before { content: '\e809'; } /* '' */
-.icon-twitter:before { content: '\e80a'; } /* '' */
-.icon-weibo:before { content: '\e80b'; } /* '' */
-.icon-facebook:before { content: '\e80c'; } /* '' */
-.icon-wechat:before { content: '\e80d'; } /* '' */
-
-
-/* ==========================================================================
-   2. General - Setting up some base styles
-   ========================================================================== */
-
+/* reset and base style*/
 html {
 	height: 100%;
 	max-height: 100%;
@@ -160,23 +13,75 @@ body {
 	max-height: 100%;
 	font-family:-apple-system-font, "Helvetica Neue",Tahoma,"PingFang SC","lantinghei sc","Microsoft Yahei", sans-serif;
 	font-size: 16px;
-	/*font-size: 1.6rem;*/
 	line-height: 1.6;
 	color: #3A4145;
 	background: #ECF0F1;
-	font-weight: 400;
-	-webkit-font-feature-settings: 'kern' 1;
-	-moz-font-feature-settings: 'kern' 1;
-	-o-font-feature-settings: 'kern' 1;
+	font-weight: normal;
 	text-rendering: geometricPrecision;
 	-webkit-font-smoothing: antialiased;
 }
 
+article, aside, details,figcaption, figure,footer, header, hgroup,main, nav, section,summary { 
+	display: block; 
+}
+
+audio, canvas, video { 
+	display: inline-block; 
+}
+audio:not([controls]) {
+	display: none; height: 0; 
+}
+[hidden], template { 
+	display: none; 
+}
+abbr[title] { 
+	border-bottom: 1px dotted; 
+}
+dfn { font-style: italic; }
+mark { background: #FF0; color: #000; }
+code, kbd, pre,samp { 
+	font-family: monospace, serif; 
+	font-size: 1em; 
+}
+
+q { quotes: "\201C" "\201D" "\2018" "\2019"; }
+
+small { font-size: 80%; }
+
+sub, sup {
+   font-size: 75%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+}
+sup { top: -0.5em; }
+
+sub { bottom: -0.25em; }
+
+img { 
+	border: 0; 
+}
+svg:not(:root) { overflow: hidden; }
+figure { margin: 0; }
+
+fieldset {
+   border: 1px solid #c0c0c0;
+   margin: 0 2px;
+   padding: 0.35em 0.625em 0.75em;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+textarea {
+	font-family: inherit; 
+	font-size: 100%; 
+	margin: 0; 
+	overflow: auto; 
+	vertical-align: top; 
+}
+
 h1, h2, h3,
 h4, h5, h6 {
-	-webkit-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-	-moz-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
-	-o-font-feature-settings: 'dlig' 1, 'liga' 1, 'lnum' 1, 'kern' 1;
 	color: #2E2E2E;
 	line-height: 1.15em;
 	margin: 0 0 0.1em 0;
@@ -185,7 +90,6 @@ h4, h5, h6 {
 h1 {
 	font-size: 4rem;
 }
-
 h2 {
 	font-size: 3.2rem;
 }
@@ -212,36 +116,17 @@ a {
 a:hover {
 	color: #1F7A65;
 }
+a:focus { outline: thin dotted; }
+a:active, a:hover { outline: 0; }
 
 p, ul, ol, dl {
-	-webkit-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-	-moz-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
-	-o-font-feature-settings: 'liga' 1, 'onum' 1, 'kern' 1;
 	margin: 0;
-	text-rendering: geometricPrecision;
 }
 
 ol ol, ul ul,
 ul ol, ol ul {
 	margin: 0 0 0.4em 0;
 	padding-left: 2em;
-}
-
-dl dt {
-	float: left;
-	width: 180px;
-	overflow: hidden;
-	clear: left;
-	text-align: right;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	font-weight: 700;
-	margin-bottom: 1em;
-}
-
-dl dd {
-	margin-left: 200px;
-	margin-bottom: 1em
 }
 
 li {
@@ -309,7 +194,6 @@ pre {
 	background: #F7FAFB;
 	border-radius: 3px;
 }
-
 pre code, pre tt {
 	font-size: inherit;
 	white-space: pre-wrap;
@@ -318,29 +202,14 @@ pre code, pre tt {
 	padding: 0;
 }
 
-kbd {
-	display: inline-block;
-	margin-bottom: 0.4em;
-	padding: 1px 8px;
-	border: #CCC 1px solid;
-	color: #666;
-	text-shadow: #FFF 0 1px 0;
-	font-size: 0.9em;
-	font-weight: 700;
-	background: #F4F4F4;
-	border-radius: 4px;
-	box-shadow:
-		0 1px 0 rgba(0, 0, 0, 0.2),
-		0 1px 0 0 #fff inset;
-}
-
 table {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	margin: 1.75em 0;
 	width: 100%;
-	max-width: 100%;
 	background-color: transparent;
+	border-collapse: collapse; 
+	border-spacing: 0;
 }
 
 table th,
@@ -377,30 +246,10 @@ table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
 }
 
-iframe, .fluid-width-video-wrapper {
+iframe{
 	display: block;
 	margin: 1.75em 0;
 }
-
-/* When a video is inside the fitvids wrapper, drop the
-margin on the iframe, cause it breaks stuff. */
-.fluid-width-video-wrapper iframe {
-	margin: 0;
-}
-
-
-/* ==========================================================================
-   3. Utilities - These things get used a lot
-   ========================================================================== */
-
-/* Clears shit */
-.clearfix:before,
-.clearfix:after {
-	content: " ";
-	display: table;
-}
-.clearfix:after { clear: both; }
-.clearfix { zoom: 1; }
 
 /* Hides shit */
 .hidden {
@@ -409,11 +258,55 @@ margin on the iframe, cause it breaks stuff. */
 	display: none;
 }
 
+/* ==========================================================================
+   1. Icons - Sets up the icon font and respective classes
+   ========================================================================== */
+
+/* Import the font file with the icons in it */
+@font-face {
+	font-family: "next-icons";
+	src:url("../fonts/next.eot");
+	src:url("../fonts/next.eot?#iefix") format("embedded-opentype"),
+		url("../fonts/next.woff") format("woff"),
+		url("../fonts/next.ttf") format("truetype"),
+		url("../fonts/next.svg#icons") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Apply these base styles to all icons */
+[class^="icon-"]:before, [class*=" icon-"]:before {
+	font-family: "next-icons", sans-serif;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	text-decoration: none !important;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Each icon is created by inserting the correct character into the
+   content of the :before pseudo element. Like a boss. */
+.icon-location:before { content: '\e800'; } /* '' */
+.icon-stats:before { content: '\e801'; } /* '' */
+.icon-link:before { content: '\e802'; } /* '' */
+.icon-arrow-left:before { content: '\e808'; } /* '' */
+.icon-arrow-right:before { content: '\e809'; } /* '' */
+.icon-twitter:before { content: '\e80a'; } /* '' */
+.icon-weibo:before { content: '\e80b'; } /* '' */
+.icon-facebook:before { content: '\e80c'; } /* '' */
+.icon-wechat:before { content: '\e80d'; } /* '' */
+
+/* ==========================================================================
+   3. Utilities - These things get used a lot
+   ========================================================================== */
+
+
 
 /* Wraps the main content & footer */
 .site-wrapper {
-	position: relative;
-	z-index: 10;
 	min-height: 100%;
 	-webkit-transition: -webkit-transform 0.5s ease;
 			transition: transform 0.5s ease;
@@ -425,10 +318,10 @@ margin on the iframe, cause it breaks stuff. */
 
 /* Big cover image on the home page */
 .main-header {
-	position: relative;
 	margin-bottom: 2rem;
 	text-align: center;
 	overflow: hidden;
+	background: #fff;
 }
 
 .main-nav {
@@ -442,10 +335,6 @@ margin on the iframe, cause it breaks stuff. */
 	margin: 0 auto;
 	text-align: right;
 }
-.main-nav .inner form{
-	display: inline-block;
-	margin-right: 2rem;
-}
 .main-nav a {
 	text-decoration: none;
 	color: #fff;
@@ -455,23 +344,13 @@ margin on the iframe, cause it breaks stuff. */
 .nav {
 	float: left;
 }
-
-.nav ul {
-	list-style: none;
-	counter-reset: item;
-	text-align: center;
-	padding: 0
-}
-.nav li {
-	margin: 0 2rem;
+.nav .nav-item{
 	display: inline-block;
 	vertical-align: top;
-}
-.nav li a {
 	text-decoration: none;
 	font-size: 1.4rem;
 	white-space: nowrap;
-	text-overflow: ellipsis;
+	margin: 0 2rem;
 }
 
 /* The details of your blog. Defined in ghost/settings/ */
@@ -483,6 +362,10 @@ margin on the iframe, cause it breaks stuff. */
 	color: #2C3E50;
 	height: 10rem;
 	line-height: 10rem;
+	-webkit-animation: fade-in-down 0.6s;
+	animation: fade-in-down 0.6s;
+	-webkit-animation-delay: 0.2s;
+	animation-delay: 0.2s;
 }
 .page-title a,.page-title a:visited{
 	color: #2C3E50
@@ -494,37 +377,20 @@ margin on the iframe, cause it breaks stuff. */
 	font-weight: 400;
 	font-family: serif;
 	color: rgba(0,0,0,0.5);
-}
-
-.main-header {
-	background: #fff;
-}
-
-/* Add subtle load-in animation for content on the home page */
-.home-template .page-title {
-	-webkit-animation: fade-in-down 0.6s;
-	animation: fade-in-down 0.6s;
-	-webkit-animation-delay: 0.2s;
-	animation-delay: 0.2s;
-}
-.home-template .page-description {
 	-webkit-animation: fade-in-down 0.9s;
 	animation: fade-in-down 0.9s;
 	-webkit-animation-delay: 0.1s;
 	animation-delay: 0.1s;
 }
-.main-content{
 
+.main-content{
 	margin: 0 auto;
 	width: 960px;
-	position: relative;
+	display: flex;
 }
 .content{
+	flex:1;
 	overflow: hidden;
-	display: inline-block;
-	vertical-align: top;
-	width: 620px;
-	margin-right: 20px;
 }
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
@@ -544,8 +410,6 @@ margin on the iframe, cause it breaks stuff. */
 }
 .post-title{
 	font-weight: normal;
-}
-body:not(.post-template) .post-title {
 	font-size: 3.6rem;
 	line-height: 1.4;
 	margin-top: 0;
@@ -583,10 +447,8 @@ body:not(.post-template) .post-title {
 	background-color: #164;
 }
 .post-meta {
-	display: block;
 	margin:0 0 1.5rem;
 	font-size: 1.4rem;
-	/*line-height: 2.2rem;*/
 }
 
 .author-thumb {
@@ -659,13 +521,8 @@ body:not(.post-template) .post-title {
    5. Single Post - When you click on an individual post
    ========================================================================== */
 
-.post-template .post-header {
-   margin-bottom: 1.5rem;
-}
-
 .post-template .post-title {
-	margin-bottom: 0;
-	font-weight: 400;
+	margin-bottom: 1.5rem;
 }
 
 .post-template .post-meta {
@@ -704,32 +561,22 @@ body:not(.post-template) .post-title {
 	max-width: 100%;
 }
 
-.footnotes {
-	font-style: italic;
-	font-size: 1.3rem;
-	line-height: 1.6em
-}
-
-.footnotes li {
-	margin: 0.6rem 0;
-}
-
-.footnotes p {
-	margin: 0;
-}
-.footnotes p a:last-child {
-    text-decoration: none;
-}
-
-
 /* The author credit area after the post */
 .post-footer {
-	position: relative;
-	margin: 6rem 0 0 0;
-	padding: 6rem 0 0 0;
-	border-top: #EBF2F6 1px solid;
+	margin: 1rem 0 0 0;
+	overflow: hidden;
 }
-
+.author-section{
+	display: flex;
+	background: #9EABB3;
+	padding: 1rem;
+}
+.author-section .author-image{
+	width: 100px;
+}
+.author-section .author{
+	flex: 1;
+}
 .post-footer h4 {
 	font-size: 1.8rem;
 	margin: 0;
@@ -760,11 +607,6 @@ body:not(.post-template) .post-title {
 	color: #111;
 }
 
-/* Create some space to the right for the share links */
-.post-footer .author {
-	margin-right: 180px;
-}
-
 .post-footer h4 a {
 	color: #2e2e2e;
 	text-decoration: none;
@@ -779,10 +621,8 @@ body:not(.post-template) .post-title {
    to be flexible at smaller screen sizes while the share
    links remain at a fixed width the whole time */
 .post-footer .share {
-	position: absolute;
-	top: 6rem;
-	right: 0;
-	width: 140px;
+	text-align: right;
+	margin-top: 2rem;
 }
 
 .post-footer .share a {
@@ -808,8 +648,7 @@ side bar style
 */
 .sidebar{
 	width: 320px;
-	display: inline-block;
-	vertical-align: top;
+	padding-left: 20px;
 }
 /**
  * Widgets
@@ -893,19 +732,17 @@ side bar style
 
 .author-profile {
 	padding: 0 0 2rem;
-	border-bottom: #EBF2F6 1px solid;
 	text-align: center;
 }
 
 .author-image {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	display: block;
-	position: absolute;
-	top: -40px;
-	left: 50%;
-	margin-left: -40px;
+	text-align: center;
+	padding: 0 auto;
+}
+
+.author-image .img {
+	display: inline-block;
+	margin: 0 auto;
 	width: 80px;
 	height: 80px;
 	border-radius: 100%;
@@ -914,29 +751,10 @@ side bar style
 	background: #fff;
 	z-index: 2;
 	box-shadow: #E7EEF2 0 0 0 1px;
-}
-
-.author-image .img {
-	position: relative;
-	display: block;
-	width: 100%;
-	height: 100%;
 	background-size: cover;
 	background-position: center center;
 	border-radius: 100%;
 }
-
-.author-profile .author-image {
-	position: relative;
-	left: auto;
-	top: auto;
-	width: 120px;
-	height: 120px;
-	padding: 3px;
-	margin: 3rem auto 0 auto;
-	box-shadow: none;
-}
-
 .author-title {
 	margin: 1.5rem 0 1rem;
 }
@@ -945,9 +763,7 @@ side bar style
 	font-size: 1.8rem;
 	line-height: 1.5em;
 	color: #50585D;
-	text-indent: 0;
-	width: 960px;
-	margin:0 auto;
+	padding: 0 2rem;
 	margin-bottom: 2rem;
 }
 
@@ -1023,7 +839,7 @@ side bar style
 }
 
 .read-next-story .post:before {
-    content: "Continue Reading";
+    content: "Newer Post";
     padding: 4px 10px 5px;
     text-transform: uppercase;
     font-size: 1.4rem;
@@ -1033,7 +849,7 @@ side bar style
     transition: all 0.5s ease;
 }
 .read-next-story.prev .post:before {
-    content: "You may also like";
+    content: "Older Post";
 }
 
 .read-next-story h2 {
@@ -1072,15 +888,6 @@ side bar style
 /* if there are two posts without covers, put a border between them */
 .read-next-story.no-cover + .read-next-story.no-cover {
     border-left: rgba(0,0,100,0.04) 1px solid;
-}
-
-/* Correctly position site-footer when next to the .read-next container */
-.read-next + .site-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 0;
 }
 .read-next + .give-me-five{
 	padding: 0;
@@ -1195,11 +1002,13 @@ side bar style
 .footer-widgets{
 	background-color:#2C3E50;
 	color: #000;
-	padding: 2rem 0
+	padding: 2rem 0;
+	display: flex;
 }
 .widgets-wrap,.copyright{
 	width: 960px;
 	margin: 0 auto;
+	overflow: hidden;
 }
 .footer-widgets a,.footer-widgets a:visited{
 	color: #0D8;
@@ -1208,8 +1017,8 @@ side bar style
 	color: #1F6A64;
 }
 .footer-widgets .widget{
-	float: left;
-	width: 320px;
+	width: 33%;
+	flex: 1;
 }
 .footer-widgets h3.widget-title{
 	color:#fff;
@@ -1229,7 +1038,7 @@ side bar style
 }
 
 /*
-duoshuo
+disqus
 */
 
 #disqus_thread{
@@ -1266,7 +1075,7 @@ duoshuo
 		width: 100%;
 	}
 	.main-content{
-		width: 100%;
+		display: block;
 		text-align: center;
 	}
 	.content{
@@ -1279,7 +1088,7 @@ duoshuo
 		text-align: left;
 	}
 
-	body:not(.post-template) .post-title {
+	.post-title {
 		font-size: 3.2rem;
 	}
 
@@ -1298,7 +1107,7 @@ duoshuo
 		padding: 2em 0;
 	}
 	.footer-widgets .widget:nth-child(n+3){
-		display: inline-block;
+		display: block;
 	}
 
 	.author-profile {
@@ -1351,6 +1160,7 @@ duoshuo
 	}
 	.sidebar{
 		width: 100%;
+		padding-left: 0;
 	}
 	.post {
 		width: auto;
@@ -1405,7 +1215,7 @@ duoshuo
 		font-size: 1.8rem;
 	}
 
-	body:not(.post-template) .post-title {
+	.post-title {
 		font-size: 2.5rem;
 	}
 
