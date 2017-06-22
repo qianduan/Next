@@ -29,7 +29,7 @@
 			"type": "image/png"
 		},
 		{
-			"src": "images/qianduan.svg",
+			"src": "images/qianduan@svg.svg",
 			"sizes": "any",
 			"type": "image/svg"
 		}
