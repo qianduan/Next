@@ -27,6 +27,12 @@
           maxEntries: maxEntries
         }
     });
+    self.toolbox.router.get('/shared/(.*)', self.toolbox.cacheFirst, {
+        cache: {
+          name: staticAssetsCacheName,
+          maxEntries: maxEntries
+        }
+    });
 
     // Do not cache disqus
     self.toolbox.router.get('/(.*)', self.toolbox.networkOnly, {

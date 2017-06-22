@@ -434,7 +434,7 @@ margin on the iframe, cause it breaks stuff. */
 .main-nav {
 	height: 4.8rem;
 	line-height: 4.8rem;
-	background-color: #2C3E50;
+	background-color: #456;
 	overflow: hidden;
 }
 .main-nav .inner{
@@ -574,15 +574,13 @@ body:not(.post-template) .post-title {
 	font-size: 1.5rem;
 	line-height: 1.5;
 	color: #ffffff;
-	background-color: #f39c12;
-	border-color: #f39c12;
+	background-color: #164;
 	float: right;
 }
 .read-more:hover,
 .read-more:focus{
 	color: #ffffff;
-	background-color: #c87f0a;
-	border-color: #be780a;
+	background-color: #164;
 }
 .post-meta {
 	display: block;
@@ -1123,7 +1121,7 @@ side bar style
 	max-width: 710px;
 	margin: 4rem auto;
 	font-size: 1.4rem;
-	color: #aaa;
+	color: #666;
 	text-align: center;
 }
 
