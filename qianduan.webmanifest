@@ -29,6 +29,11 @@
 			"type": "image/png"
 		},
 		{
+			"src": "images/qianduan@512.png",
+			"sizes": "512x512",
+			"type": "image/png"
+		},
+		{
 			"src": "images/icon.svg",
 			"sizes": "any",
 			"type": "image/svg"
@@ -36,6 +41,6 @@
 	],
 	"display": "standalone",
 	"theme_color": "#2c3e50",
-	"background_color": "#ECF0F1",
+	"background_color": "#f9f9f9",
 	"orientation": "portrait" 
 }
