@@ -21,24 +21,13 @@ body {
 	-webkit-font-smoothing: antialiased;
 }
 
-article, aside, details,figcaption, figure,footer, header, hgroup,main, nav, section,summary { 
+details,figcaption, figure,summary { 
 	display: block; 
 }
 
-audio, canvas, video { 
-	display: inline-block; 
-}
-audio:not([controls]) {
-	display: none; height: 0; 
-}
 [hidden], template { 
 	display: none; 
 }
-abbr[title] { 
-	border-bottom: 1px dotted; 
-}
-dfn { font-style: italic; }
-mark { background: #FF0; color: #000; }
 code, kbd, pre,samp { 
 	font-family: monospace, serif; 
 	font-size: 1em; 
@@ -47,36 +36,17 @@ code, kbd, pre,samp {
 q { quotes: "\201C" "\201D" "\2018" "\2019"; }
 
 small { font-size: 80%; }
-
-sub, sup {
-   font-size: 75%;
-   line-height: 0;
-   position: relative;
-   vertical-align: baseline;
-}
-sup { top: -0.5em; }
-
-sub { bottom: -0.25em; }
-
 img { 
 	border: 0; 
 }
-svg:not(:root) { overflow: hidden; }
-figure { margin: 0; }
 
 fieldset {
    border: 1px solid #c0c0c0;
-   margin: 0 2px;
-   padding: 0.35em 0.625em 0.75em;
 }
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
 
 textarea {
 	font-family: inherit; 
 	font-size: 100%; 
-	margin: 0; 
-	overflow: auto; 
 	vertical-align: top; 
 }
 
@@ -119,7 +89,7 @@ a:hover {
 a:focus { outline: thin dotted; }
 a:active, a:hover { outline: 0; }
 
-p, ul, ol, dl {
+p, ul, ol, dl,figure {
 	margin: 0;
 }
 
@@ -246,11 +216,6 @@ table.plain tbody > tr:nth-child(odd) > th {
    background: transparent;
 }
 
-iframe{
-	display: block;
-	margin: 1.75em 0;
-}
-
 /* Hides shit */
 .hidden {
 	text-indent: -9999px;
@@ -300,7 +265,7 @@ iframe{
 .icon-wechat:before { content: '\e80d'; } /* '' */
 
 /* ==========================================================================
-   1. General - The main styles for the the theme
+   2. General - The main styles for the the theme
    ========================================================================== */
 
 /* content box */
@@ -342,7 +307,9 @@ iframe{
 	white-space: nowrap;
 	margin: 0 2rem;
 }
-
+.nav .subscribe{
+	margin-right: 2rem;
+}
 /* The details of your blog. Defined in ghost/settings/ */
 .page-title {
 	margin:0 auto;
@@ -361,7 +328,7 @@ iframe{
 	color: #2C3E50
 }
 .page-description {
-	margin: 0;
+	margin: 1rem 0;
 	font-size: 2rem;
 	line-height: 1.5em;
 	font-weight: 400;
@@ -380,6 +347,10 @@ iframe{
 	flex:1;
 	overflow: hidden;
 }
+/* ==========================================================================
+   3. post - post style
+   ========================================================================== */
+
 /* Every post, on every page, gets this style on its <article> tag */
 .post {
 	margin:0 auto 2rem;
@@ -459,11 +430,6 @@ iframe{
 	margin-left: 8px;
 	white-space: nowrap;
 }
-
-/* ==========================================================================
-   5. Single Post - When you click on an individual post
-   ========================================================================== */
-
 .post-template .post-title {
 	margin-bottom: 1.5rem;
 }
@@ -577,10 +543,11 @@ iframe{
 .post-footer .share .icon-weibo:hover {
 	color: #dd4b39
 }
-/*
-side bar style
+/* ==========================================================================
+   4. sidebar and widgets
+   ========================================================================== */
 
-*/
+/* side bar style */
 .sidebar{
 	width: 320px;
 	padding-left: 20px;
@@ -623,22 +590,6 @@ side bar style
 .widget li > ol {
 	margin-left: 2rem;
 }
-.give-me-five{
-	text-align: center;
-	padding: 1rem;
-	background-color: #fff;
-}
-.give-me-five.waiting{
-	font-size:3rem;
-}
-.give-me-five.waiting .description{
-	font-size: 1.5rem;
-}
-.give-me-five img{
-	max-width: 100%;
-	padding: 0;
-	margin: 0
-}
 /*widget for sidebar*/
 
 .sidebar .widget{
@@ -661,6 +612,27 @@ side bar style
 	vertical-align: middle;
 	margin-right: 1em;
 }
+/* ==========================================================================
+   5. promotions
+   ========================================================================== */
+
+.give-me-five{
+	text-align: center;
+	padding: 1rem;
+	background-color: #fff;
+}
+.give-me-five.waiting{
+	font-size:3rem;
+}
+.give-me-five.waiting .description{
+	font-size: 1.5rem;
+}
+.give-me-five img{
+	max-width: 100%;
+	padding: 0;
+	margin: 0
+}
+
 /* ==========================================================================
    6. Author profile
    ========================================================================== */
@@ -695,10 +667,11 @@ side bar style
 
 .author-bio {
 	font-size: 1.8rem;
-	line-height: 1.5em;
+	line-height: 1.5;
 	color: #50585D;
 	padding: 0 2rem;
-	margin-bottom: 2rem;
+	margin-bottom: 1rem;
+	font-weight: normal;
 }
 
 .author-meta {
@@ -738,7 +711,7 @@ side bar style
     position: relative;
     text-align: center;
     color: #fff;
-    background: #222 no-repeat center center;
+    background: #f5f8fa no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -798,10 +771,6 @@ side bar style
 }
 
 /* Special styles for posts with no cover images */
-.read-next-story.no-cover {
-    background: #f5f8fa;
-}
-
 .read-next-story.no-cover:before {
     display: none;
 }
@@ -831,23 +800,7 @@ side bar style
 	display: block;
 }
 /* ==========================================================================
-   8. Third Party Elements - Embeds from other services
-   ========================================================================== */
-
-/* Github */
-.gist table {
-	margin: 0;
-	font-size: 1.4rem;
-}
-.gist td {
-	line-height: 1.4;
-}
-.gist .line-number {
-	min-width: 25px;
-}
-
-/* ==========================================================================
-   9. Pagination - Tools to let you flick between pages
+   8. Pagination - Tools to let you flick between pages
    ========================================================================== */
 
 /* The main wrapper for our pagination links */
@@ -916,7 +869,7 @@ side bar style
 
 
 /* ==========================================================================
-   10. Footer - The bottom of every page
+   9. Footer - The bottom of every page
    ========================================================================== */
 
 .site-footer {
@@ -963,17 +916,9 @@ side bar style
 	line-height: 1.4;
 }
 
-/*
-disqus
-*/
 
-#disqus_thread{
-	padding: 2rem;
-	background-color: #fff;
-	margin: 2rem 0
-}
 /* ==========================================================================
-   11. Media Queries - Smaller than 900px
+   10. Media Queries - larger than 1400px
    ========================================================================== */
 @media only screen and (min-width: 1400px) {
 	.inner{
@@ -989,6 +934,9 @@ disqus
 	}
 }
 
+/* ==========================================================================
+   11. Media Queries - smaller than 960px
+   ========================================================================== */
 @media only screen and (max-width: 960px) {
 	
 	blockquote {
@@ -1042,10 +990,6 @@ disqus
 
 	.author-meta span {
 		display: block;
-		margin: 1.5rem 0;
-	}
-	.author-profile .author-meta span {
-		font-size: 1.3rem;
 	}
 
 	.read-next {
@@ -1070,7 +1014,7 @@ disqus
 	.main-nav{
 		height: .5rem;
 	}
-	.main-nav .inner{
+	.home-template .main-nav .inner,.post-template .main-nav .inner{
 		display: none;
 	}
 
@@ -1141,8 +1085,8 @@ disqus
 
 	.post-content img {
 		padding: 0;
-		min-width: 0;
-		max-width: 100%; /* fallback when calc doesn't work */
+		width: 100%;
+		object-fit: cover;
 	}
 
 	.post-meta {
@@ -1171,9 +1115,6 @@ disqus
 
 	.site-footer {
 		margin-top: 3rem;
-	}
-	.author-profile .author-meta span {
-		font-size: 1.4rem;
 	}
 
     .read-next .post {
@@ -1211,10 +1152,28 @@ disqus
 	}
 }
 
-
 /* ==========================================================================
-   14. code highlight, use highlight.js
+   14. Third Party Elements - Embeds from other services
    ========================================================================== */
+
+/* Github */
+.gist table {
+	margin: 0;
+	font-size: 1.4rem;
+}
+.gist td {
+	line-height: 1.4;
+}
+.gist .line-number {
+	min-width: 25px;
+}
+/* disqus */
+#disqus_thread{
+	padding: 2rem;
+	background-color: #fff;
+	margin: 2rem 0
+}
+/* highlight.js */
 .hljs {
   display: block;
   overflow-x: auto;
