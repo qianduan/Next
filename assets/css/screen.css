@@ -307,7 +307,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 	white-space: nowrap;
 	margin: 0 2rem;
 }
-.nav .subscribe{
+.main-nav .subscribe{
 	margin-right: 2rem;
 }
 /* The details of your blog. Defined in ghost/settings/ */
