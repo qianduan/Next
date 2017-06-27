@@ -548,9 +548,9 @@ iframe{
    links remain at a fixed width the whole time */
 .post-footer .share {
 	text-align: right;
-	margin-top: 2rem;
+	margin-top: 1rem;
 	border-bottom: 1px solid #ECF0F1;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 .post-footer .share .share-title {
@@ -990,11 +990,11 @@ disqus
 }
 
 @media only screen and (max-width: 960px) {
-
+	
 	blockquote {
 		margin-left: 0;
 	}
-	.main-nav .inner{
+	.inner{
 		width: 100%;
 	}
 	.main-content{
@@ -1073,7 +1073,7 @@ disqus
 	.main-nav .inner{
 		display: none;
 	}
-	.inner,
+
 	.pagination {
 		width: auto;
 		margin: 0 auto;
@@ -1082,10 +1082,6 @@ disqus
 		width: 100%;
 		padding-left: 0;
 	}
-	.post {
-		width: auto;
-	}
-
 	.post-date {
 		display: none;
 	}
@@ -1153,27 +1149,6 @@ disqus
 		font-size: 1.3rem;
 		margin-top: 1rem;
 	}
-
-	.post-footer {
-		padding: 5rem 0 3rem 0;
-		text-align: center;
-	}
-
-	.post-footer .author {
-		margin: 0 0 2rem 0;
-		padding: 0 0 1.6rem 0;
-		border-bottom: #EBF2F6 1px dashed;
-	}
-
-	.post-footer .share {
-		position: static;
-		width: auto;
-	}
-
-	.post-footer .share a {
-		margin: 1.4rem 0.8rem 0 0.8rem;
-	}
-
 	.author-meta li {
 		float: none;
 		margin: 0;
@@ -1200,14 +1175,6 @@ disqus
 	.author-profile .author-meta span {
 		font-size: 1.4rem;
 	}
-
-	.paged .main-header .page-description {
-		display: none;
-	}
-	.read-next {
-        margin-top: 2rem;
-        margin-bottom: -37px;
-    }
 
     .read-next .post {
         width: 100%;
