@@ -300,23 +300,15 @@ iframe{
 .icon-wechat:before { content: '\e80d'; } /* '' */
 
 /* ==========================================================================
-   3. Utilities - These things get used a lot
+   1. General - The main styles for the the theme
    ========================================================================== */
 
-
-
-/* Wraps the main content & footer */
-.site-wrapper {
-	min-height: 100%;
-	-webkit-transition: -webkit-transform 0.5s ease;
-			transition: transform 0.5s ease;
+/* content box */
+.inner{
+	width: 960px;
+	margin: 0 auto;	
 }
-
-/* ==========================================================================
-   4. General - The main styles for the the theme
-   ========================================================================== */
-
-/* Big cover image on the home page */
+/* section header */
 .main-header {
 	margin-bottom: 2rem;
 	text-align: center;
@@ -331,8 +323,6 @@ iframe{
 	overflow: hidden;
 }
 .main-nav .inner{
-	width: 960px;
-	margin: 0 auto;
 	text-align: right;
 }
 .main-nav a {
@@ -384,8 +374,6 @@ iframe{
 }
 
 .main-content{
-	margin: 0 auto;
-	width: 960px;
 	display: flex;
 }
 .content{
@@ -678,7 +666,7 @@ side bar style
    ========================================================================== */
 
 .author-profile {
-	padding: 0 0 2rem;
+	padding:2rem 0;
 	text-align: center;
 }
 
@@ -946,8 +934,6 @@ side bar style
 	display: flex;
 }
 .footer-widgets,.copyright{
-	width: 960px;
-	margin: 0 auto;
 	overflow: hidden;
 }
 .footer-widgets a,.footer-widgets a:visited{
@@ -990,11 +976,8 @@ disqus
    11. Media Queries - Smaller than 900px
    ========================================================================== */
 @media only screen and (min-width: 1400px) {
-	.main-content,.footer-widgets, .copyright,.main-nav .inner{
+	.inner{
 		width: 1160px;
-	}
-	.content{
-		width: 820px;
 	}
 	.post{
 		padding: 2rem 6rem;
@@ -1067,7 +1050,6 @@ disqus
 
 	.read-next {
         flex-direction: column;
-        margin-top: 4rem;
     }
 
     .read-next p {
