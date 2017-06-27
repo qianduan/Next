@@ -1051,7 +1051,6 @@ disqus
 	.read-next {
         flex-direction: column;
     }
-
     .read-next p {
         display: none;
     }
