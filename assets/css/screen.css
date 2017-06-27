@@ -707,11 +707,14 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 .read-next-story {
     flex: 1;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
     text-decoration: none;
     position: relative;
     text-align: center;
-    color: #fff;
-    background: #f5f8fa no-repeat center center;
+    color: #333;
+    background: #fff no-repeat center center;
     background-size: cover;
     overflow: hidden;
 }
@@ -762,7 +765,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 .read-next-story h2 {
     margin-top: 1rem;
     color: #fff;
-    line-height: 1.6
+    line-height: 1.3
 }
 
 .read-next-story p {
