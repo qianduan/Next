@@ -328,7 +328,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 	color: #2C3E50
 }
 .page-description {
-	margin: 1rem 0;
+	margin:0 0 1rem 0;
 	font-size: 2rem;
 	line-height: 1.5em;
 	font-weight: 400;
@@ -432,6 +432,7 @@ table.plain tbody > tr:nth-child(odd) > th {
 }
 .post-template .post-title {
 	margin-bottom: 1.5rem;
+	margin-top: 2rem;
 }
 
 .post-template .post-meta {
@@ -880,6 +881,14 @@ table.plain tbody > tr:nth-child(odd) > th {
 	margin-top: 2em;
 	background-color:#2C3E50;
 }
+
+.copyright{
+	padding: 2rem 0 2rem 1rem;
+	line-height: 1.4;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
 .site-footer ol,
 .site-footer ul{
 	padding-left: 0;
@@ -888,8 +897,6 @@ table.plain tbody > tr:nth-child(odd) > th {
 	color: #000;
 	padding: 2rem 0;
 	display: flex;
-}
-.footer-widgets,.copyright{
 	overflow: hidden;
 }
 .footer-widgets a,.footer-widgets a:visited{
@@ -914,11 +921,6 @@ table.plain tbody > tr:nth-child(odd) > th {
 .footer-qrcode{
 	margin-top: 1.5rem
 }
-.copyright{
-	padding: 2rem 0 2rem 1rem;
-	line-height: 1.4;
-}
-
 
 /* ==========================================================================
    10. Media Queries - larger than 1400px
@@ -964,6 +966,11 @@ table.plain tbody > tr:nth-child(odd) > th {
 
 	.post-title {
 		font-size: 3.2rem;
+	}
+
+	.post-template .post-title {
+		margin-bottom: 1rem;
+		margin-top: 1rem;
 	}
 
 	hr {
