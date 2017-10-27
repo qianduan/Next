@@ -19,6 +19,11 @@ body {
 	font-weight: normal;
 	text-rendering: geometricPrecision;
 	-webkit-font-smoothing: antialiased;
+	padding: 
+        constant(safe-area-inset-top) 
+        constant(safe-area-inset-right) 
+        constant(safe-area-inset-bottom) 
+        constant(safe-area-inset-left);  
 }
 
 details,figcaption, figure,summary { 
