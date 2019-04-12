@@ -1,10 +1,11 @@
 <nav class="main-nav">
 	<div class="inner">
 		<div class="nav">
-	        {{#foreach navigation}}
-	            <a role="presentation" class="nav-item nav-{{slug}}{{#if current}} nav-current{{/if}}" href="{{url absolute="true"}}">{{label}}</a>
-	        {{/foreach}}
+			{{#foreach navigation}}
+			<a role="presentation" class="nav-item nav-{{slug}}{{#if current}} nav-current{{/if}}"
+				href="{{url absolute="true"}}">{{label}}</a>
+			{{/foreach}}
 		</div>
-		<a href="{{@blog.url}}/rss/" class="subscribe">Subscribe</a>
+		<a href="{{@site.url}}/rss/" class="subscribe">Subscribe</a>
 	</div>
 </nav>
