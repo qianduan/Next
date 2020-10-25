@@ -1,1 +1,4 @@
 *.swp
+.vscode/
+assets/.DS_Store
+Archive.zip

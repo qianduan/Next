@@ -6,22 +6,23 @@
 {{! Everything inside the #post tags pulls data from the page }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-{{navigation}}
+<header class="main-header post-head {{#if feature_image}}"
+	style="background-image: url({{img_url}}){{else}}no-cover{{/if}}">
+	{{navigation}}
 	<div class="main-header-content">
 		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
 	</div>
 </header>
 <div class="main-content inner">
-<main class="content" role="main">
-    <article class="{{post_class}}">
-        <h1 class="post-title">{{title}}</h1>
-        <section class="post-content">
-            {{content}}
-        </section>
+	<main class="content" role="main">
+		<article class="{{post_class}}">
+			<h1 class="post-title">{{title}}</h1>
+			<section class="post-content">
+				{{content}}
+			</section>
 
-    </article>
-</main>{{> aside}}
+		</article>
+	</main>{{> aside}}
 </div>
 {{/post}}

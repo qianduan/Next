@@ -6,112 +6,123 @@
 {{! Everything inside the #post tags pulls data from the post }}
 {{#post}}
 
-<header class="main-header post-head {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}">
-{{navigation}}
+<header class="main-header post-head {{#if feature_image}}"
+	style="background-image: url({{img_url}}){{else}}no-cover{{/if}}">
+	{{navigation}}
 	<div class="main-header-content">
 		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
 		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
 	</div>
 </header>
 <div class="main-content inner">
-<main class="content" role="main">
-	<article class="{{post_class}}">
-		<h1 class="post-title">{{title}}</h1>
-		<section class="post-meta">
-			<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time> {{tags prefix=" on "}}
-		</section>
-		<section class="post-content">
-			<div class="give-me-five">
-				<a href="https://100offer.com/?utm_source=qianduan&utm_medium=display&utm_campaign=qianduan&campaign_code=qianduan" target="_blank"><img src="https://img.qianduan.net/give-me-five/100offer.jpg"></a>
-			</div> 
-			{{content}}
-		</section>
-		<footer class="post-footer">
-			<section class="share">
-				<span class="share-title">分享</span>
-				<a class="icon-twitter" href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
-					onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-					<span class="hidden">Twitter</span>
-				</a>
-				<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
-					onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-					<span class="hidden">Facebook</span>
-				</a>
-				<a class="icon-weibo" href="http://v.t.sina.com.cn/share/share.php?title={{encode title}}&amp;url={{url absolute="true"}}"
-					onclick="window.open(this.href, 'weibo-share','width=580,height=296');return false;">
-					<span class="hidden">新浪微博</span>
-				</a>
-
+	<main class="content" role="main">
+		<article class="{{post_class}}">
+			<h1 class="post-title">{{title}}</h1>
+			<section class="post-meta">
+				<time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="DD MMMM YYYY"}}</time>
+				{{tags prefix=" on "}}
 			</section>
-			
-		{{! Everything inside the #author tags pulls data from the author }}
-
-		{{#author}}
-			<div class="author-section">
-			{{#if image}}
-			<figure class="author-image">
-				<a class="img" href="{{url}}" style="background-image: url({{image}})"><span class="hidden">{{name}}'s Picture</span></a>
-			</figure>
-			{{/if}}
-
-			<section class="author">
-				<h4><a href="{{url}}">{{name}}</a></h4>
-
-				{{#if bio}}
-					<p>{{{bio}}}</p>
-				{{else}}
-					<p>Read <a href="{{url}}">more posts</a> by this author.</p>
-				{{/if}}
-				<div class="author-meta">
-					{{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
-					{{#if website}}<span class="author-link icon-link"><a href="{{website}}">{{website}}</a></span>{{/if}}
-					{{#if twitter}}<span class="author-twitter icon-twitter"><a href="{{twitter_url}}">{{twitter}}</a></span>{{/if}}
+			<section class="post-content">
+				<div class="give-me-five">
+					<a href="https://100offer.com/?utm_source=qianduan&utm_medium=display&utm_campaign=qianduan&campaign_code=qianduan"
+						target="_blank"><img src="https://img.qianduan.net/give-me-five/100offer.jpg"></a>
 				</div>
+				{{content}}
 			</section>
-			</div>
-		{{/author}}
+			<footer class="post-footer">
+				<section class="share">
+					<span class="share-title">分享</span>
+					<a class="icon-twitter"
+						href="https://twitter.com/intent/tweet?text={{encode title}}&amp;url={{url absolute="true"}}"
+						onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+						<span class="hidden">Twitter</span>
+					</a>
+					<a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}"
+						onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+						<span class="hidden">Facebook</span>
+					</a>
+					<a class="icon-weibo"
+						href="http://v.t.sina.com.cn/share/share.php?title={{encode title}}&amp;url={{url absolute="true"}}"
+						onclick="window.open(this.href, 'weibo-share','width=580,height=296');return false;">
+						<span class="hidden">新浪微博</span>
+					</a>
 
-		</footer>
+				</section>
 
-	</article>
-	{{!-- read next&prev --}}
-	<section class="read-next">
-	{{#next_post}}
-	<a class="read-next-story {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-		<section class="post">
-			<h2>{{title}}</h2>
+				{{! Everything inside the #author tags pulls data from the author }}
+
+				{{#primary_author}}
+				<div class="author-section">
+					{{#if profile_image}}
+					<figure class="author-image">
+						<a class="img" href="{{url}}" style="background-image: url({{img_url}})"><span
+								class="hidden">{{name}}'s Picture</span></a>
+					</figure>
+					{{/if}}
+
+					<section class="author">
+						<h4><a href="{{url}}">{{name}}</a></h4>
+
+						{{#if bio}}
+						<p>{{{bio}}}</p>
+						{{else}}
+						<p>Read <a href="{{url}}">more posts</a> by this author.</p>
+						{{/if}}
+						<div class="author-meta">
+							{{#if location}}<span class="author-location icon-location">{{location}}</span>{{/if}}
+							{{#if website}}<span class="author-link icon-link"><a
+									href="{{website}}">{{website}}</a></span>{{/if}}
+							{{#if twitter}}<span class="author-twitter icon-twitter"><a
+									href="{{twitter_url}}">{{twitter}}</a></span>{{/if}}
+						</div>
+					</section>
+				</div>
+				{{/author}}
+
+			</footer>
+
+		</article>
+		{{!-- read next&prev --}}
+		<section class="read-next">
+			{{#next_post}}
+			<a class="read-next-story {{#if image}}" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}"
+				href="{{url}}">
+				<section class="post">
+					<h2>{{title}}</h2>
+				</section>
+			</a>
+			{{/next_post}}
+			{{#prev_post}}
+			<a class="read-next-story prev {{#if image}}"
+				style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
+				<section class="post">
+					<h2>{{title}}</h2>
+				</section>
+			</a>
+			{{/prev_post}}
 		</section>
-	</a>
-	{{/next_post}}
-	{{#prev_post}}
-	<a class="read-next-story prev {{#if image}}" style="background-image: url({{image}}){{else}}no-cover{{/if}}" href="{{url}}">
-		<section class="post">
-			<h2>{{title}}</h2>
-		</section>
-	</a>
-	{{/prev_post}}
-	</section>
 
-<div id="disqus_thread"></div>
-{{!-- replace your disqus configuration below --}}
-<script>
+		<div id="disqus_thread"></div>
+		{{!-- replace your disqus configuration below --}}
+		<script>
 
-var disqus_config = function () {
-this.page.url = "{{url absolute="true"}}"; 
-this.page.identifier = "ghost-{{id}}";
-};
+			var disqus_config = function () {
+				this.page.url = "{{url absolute="true"}}";
+				this.page.identifier = "ghost-{{comment_id}}";
+			};
 
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://iqd.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+			(function () { // DON'T EDIT BELOW THIS LINE
+				var d = document, s = d.createElement('script');
+				s.src = 'https://iqd.disqus.com/embed.js';
+				s.setAttribute('data-timestamp', +new Date());
+				(d.head || d.body).appendChild(s);
+			})();
+		</script>
+		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by
+				Disqus.</a></noscript>
 
 
-</main>{{> aside}}
+	</main>{{> aside}}
 </div>
 {{/post}}
 <script type="text/javascript" src="{{asset "js/jquery-3.2.0.min.js"}}"></script>

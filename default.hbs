@@ -1,32 +1,34 @@
 <!DOCTYPE html>
-<html ⚡  lang="zh-cmn-Hans">
+<html ⚡ lang="zh-cmn-Hans">
+
 <head>
 
-{{!-- Document Settings --}}
-<meta charset="utf-8" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	{{!-- Document Settings --}}
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-{{!-- Page Meta --}}
-<title>{{meta_title}}</title>
-<meta name="description" content="{{meta_description}}" />
+	{{!-- Page Meta --}}
+	<title>{{meta_title}}</title>
+	<meta name="description" content="{{meta_description}}" />
 
-{{!-- Mobile Meta --}}
-<meta name="HandheldFriendly" content="True" />
-<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0,viewport-fit=cover" />
-{{!-- PWA --}}
-<link rel="manifest" href="/qianduan.webmanifest">
-{{!-- Brand icon --}}
-<link rel="shortcut icon" href="{{asset "favicon.png"}}">
-<meta name="theme-color" content="#2c3e50">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	{{!-- Mobile Meta --}}
+	<meta name="HandheldFriendly" content="True" />
+	<meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1.0,viewport-fit=cover" />
+	{{!-- PWA --}}
+	<link rel="manifest" href="/qianduan.webmanifest">
+	{{!-- Brand icon --}}
+	<link rel="shortcut icon" href="{{asset "favicon.png"}}">
+	<meta name="theme-color" content="#2c3e50">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
-{{! Styles'n'Scripts }}
-<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+	{{! Styles'n'Scripts }}
+	<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
 
-{{!-- Ghost outputs important style and meta data with this tag --}}
-{{ghost_head}}
+	{{!-- Ghost outputs important style and meta data with this tag --}}
+	{{ghost_head}}
 </head>
+
 <body class="{{body_class}}">
 	{{{body}}}
 	<footer class="site-footer">
@@ -37,19 +39,24 @@
 					<li><a href="http://accessibilityunion.org/" target="_blank" rel="noopener">信息无障碍产品联盟</a></li>
 					<li><a href="http://www.alloyteam.com/" target="_blank" rel="noopener">腾讯AlloyTeam</a></li>
 					<li><a href="http://w3ctech.com/" rel="colleague noopener" title="Web 标准化交流会">Web 标准化交流会</a></li>
-					<li><a href="http://www.whyidc.com/" rel="friend noopener" title="国内优质双线全能空间" target="_blank">WhyIDC 双线全能空间</a></li>
+					<li><a href="http://www.whyidc.com/" rel="friend noopener" title="国内优质双线全能空间" target="_blank">WhyIDC
+							双线全能空间</a></li>
 				</ul>
 			</div>
 			<div class="widget">
 				<h3 class="widget-title">友情链接</h3>
 				<ul class="blogroll">
-					<li><a href="https://www.swiftnote.io/" rel="co-worker noopener" title="Swift 开发技术博客" target="_blank">Swift Note</a></li>
-					<li><a href="http://gaowhen.com/" rel="friend noopener co-worker" title="高温的博客" target="_blank">GaoWhen高H温</a></li>
+					<li><a href="https://www.swiftnote.io/" rel="co-worker noopener" title="Swift 开发技术博客"
+							target="_blank">Swift Note</a></li>
+					<li><a href="http://gaowhen.com/" rel="friend noopener co-worker" title="高温的博客"
+							target="_blank">GaoWhen高H温</a></li>
 					<li><a href="http://ivane.me/" rel="friend noopener" target="_blank">黄老湿</a></li>
 					<li><a href="http://www.99css.com/" rel="noopener" target="_blank">99CSS</a></li>
 					<li><a href="http://ooxx.me" rel="friend noopener">大猫の意淫网志</a></li>
-					<li><a href="http://ofcss.com/" rel="friend noopener" title="小李刀刀（kairee）的技术博客" target="_blank">裁纸刀下</a></li>
-					<li><a href="http://www.topcss.org/" rel="friend noopener" title="关注信息无障碍" target="_blank">进步博客</a></li>
+					<li><a href="http://ofcss.com/" rel="friend noopener" title="小李刀刀（kairee）的技术博客"
+							target="_blank">裁纸刀下</a></li>
+					<li><a href="http://www.topcss.org/" rel="friend noopener" title="关注信息无障碍" target="_blank">进步博客</a>
+					</li>
 					<li><a href="http://www.benben.cc/" rel="noopener" target="_blank">笨笨剥壳</a></li>
 					<li><a href="http://www.smallni.com" rel="noopener">Smallni's blog</a></li>
 					<li><a href="http://www.misuisui.com/" rel="noopener" target="_blank">米随随s5s5</a></li>
@@ -73,55 +80,56 @@
 			<div class="widget">
 				<h3 class="widget-title">关注前端观察官方微信</h3>
 				<div class="widget-box">
-					<div class="footer-qrcode"><img src="//www.qianduan.net/img/give-me-five/qianduan_wechat.jpg" alt="前端观察官方微信二维码"></div>
+					<div class="footer-qrcode"><img src="//www.qianduan.net/img/give-me-five/qianduan_wechat.jpg"
+							alt="前端观察官方微信二维码"></div>
 				</div>
 			</div>
 		</section>
 	</footer>
 	<section class="copyright inner">
 		<a href="{{@blog.url}}">{{@blog.title}}</a> &copy; 2008-{{date format="YYYY"}} All rights reserved.<br />
-		Powered by <a href="https://www.linode.com/?r=d5156fa674d41bf96fbace51c9fade505f6fd852" rel="noopener" target="_blank">Linode</a>
 	</section>
-{{!-- Ghost outputs important scripts and data with this tag --}}
-{{ghost_foot}}
-{{!-- The main JavaScript file for Next theme --}}
-<script>
-	var serviceWorkerUri = '/serviceworker.js';
+	{{!-- Ghost outputs important scripts and data with this tag --}}
+	{{ghost_foot}}
+	{{!-- The main JavaScript file for Next theme --}}
+	<script>
+		var serviceWorkerUri = '/serviceworker.js';
 
-if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register(serviceWorkerUri).then(function() {
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register(serviceWorkerUri).then(function () {
 
-      // Registration was successful. Now, check to see whether the service worker is controlling the page.
-      if (navigator.serviceWorker.controller) {
+				// Registration was successful. Now, check to see whether the service worker is controlling the page.
+				if (navigator.serviceWorker.controller) {
 
-        console.log('Assets cached by the controlling service worker.');
+					console.log('Assets cached by the controlling service worker.');
 
-      } else {
+				} else {
 
-        console.log('Please reload this page to allow the service worker to handle network operations.');
+					console.log('Please reload this page to allow the service worker to handle network operations.');
 
-      }
-    }).catch(function(error) {
+				}
+			}).catch(function (error) {
 
-      console.log('ERROR: ' + error);
+				console.log('ERROR: ' + error);
 
-    });
+			});
 
-} else {
+		} else {
 
-    // The current browser doesn't support service workers.
-    console.log('Service workers are not supported in the current browser.');
+			// The current browser doesn't support service workers.
+			console.log('Service workers are not supported in the current browser.');
 
-}
-</script>
-<script>
-var _hmt = _hmt || [];
-(function() {
-var hm = document.createElement("script");
-hm.src = "//hm.baidu.com/hm.js?73df675d39af5853c92ed204ddecac34";
-var s = document.getElementsByTagName("script")[0];
-s.parentNode.insertBefore(hm, s);
-})();
-</script>
+		}
+	</script>
+	<script>
+		var _hmt = _hmt || [];
+		(function () {
+			var hm = document.createElement("script");
+			hm.src = "//hm.baidu.com/hm.js?73df675d39af5853c92ed204ddecac34";
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(hm, s);
+		})();
+	</script>
 </body>
+
 </html>

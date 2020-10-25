@@ -2,8 +2,7 @@
 	"short_name": "前端观察",
 	"name": "前端观察官方网站",
 	"start_url": "/",
-	"icons": [
-		{
+	"icons": [{
 			"src": "assets/favicon.ico",
 			"sizes": "32x32 16x16",
 			"type": "image/vnd.microsoft.icon"
@@ -42,5 +41,5 @@
 	"display": "standalone",
 	"theme_color": "#2c3e50",
 	"background_color": "#f9f9f9",
-	"orientation": "portrait" 
+	"orientation": "portrait"
 }

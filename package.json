@@ -2,29 +2,29 @@
 	"name": "Next",
 	"description": "theme for Ghost. Beautiful, minimal and responsive. support Google Progressive Web App",
 	"demo": "https://www.qianduan.net",
-	"version": "0.5.1",
+	"version": "0.5.2",
 	"engines": {
-	  "ghost": ">=0.9.0 <1.0.0"
+		"ghost": ">=3.0"
 	},
 	"license": "MIT",
 	"author": {
-        "name": "shenfei",
-        "email": "mienflying@gmail.com",
-        "url": "https://www.qianduan.net"
-    },
-    "gpm": {
-        "type": "theme",
-        "categories": [
-            "Minimal",
-            "Personal Blogs"
-        ]
-    },
-    "keywords": [
-        "ghost",
-        "theme"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/qianduan/Next.git"
-    }
+		"name": "shenfei",
+		"email": "mienflying@gmail.com",
+		"url": "https://www.qianduan.net"
+	},
+	"gpm": {
+		"type": "theme",
+		"categories": [
+			"Minimal",
+			"Personal Blogs"
+		]
+	},
+	"keywords": [
+		"ghost",
+		"theme"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/qianduan/Next.git"
+	}
 }
