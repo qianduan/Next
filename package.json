@@ -2,10 +2,10 @@
 	"name": "next",
 	"description": "theme for Ghost. Beautiful, minimal and responsive. support Google Progressive Web App",
 	"demo": "https://www.qianduan.net",
-	"version": "0.5.1",
+	"version": "2.0.1",
 	"engines": {
-		"ghost": ">=2.0.0",
-		"ghost-api": "v2"
+		"ghost": ">=3.0.0",
+		"ghost-api": "v3"
 	},
 	"license": "MIT",
 	"author": {
