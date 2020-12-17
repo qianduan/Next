@@ -16,13 +16,13 @@
 	{{!-- PWA --}}
 	<link rel="manifest" href="/qianduan.webmanifest">
 	{{!-- Brand icon --}}
-	<link rel="shortcut icon" href="{{asset "favicon.png"}}">
+	<link rel="shortcut icon" href="{{asset " favicon.png"}}">
 	<meta name="theme-color" content="#2c3e50">
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 
 	{{! Styles'n'Scripts }}
-	<link rel="stylesheet" type="text/css" href="{{asset "css/screen.css"}}" />
+	<link rel="stylesheet" type="text/css" href="{{asset " css/screen.css"}}" />
 
 	{{!-- Ghost outputs important style and meta data with this tag --}}
 	{{ghost_head}}
@@ -88,45 +88,6 @@
 	</section>
 	{{!-- Ghost outputs important scripts and data with this tag --}}
 	{{ghost_foot}}
-	{{!-- The main JavaScript file for Next theme --}}
-	<script>
-		var serviceWorkerUri = '/serviceworker.js';
-
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register(serviceWorkerUri).then(function () {
-
-				// Registration was successful. Now, check to see whether the service worker is controlling the page.
-				if (navigator.serviceWorker.controller) {
-
-					console.log('Assets cached by the controlling service worker.');
-
-				} else {
-
-					console.log('Please reload this page to allow the service worker to handle network operations.');
-
-				}
-			}).catch(function (error) {
-
-				console.log('ERROR: ' + error);
-
-			});
-
-		} else {
-
-			// The current browser doesn't support service workers.
-			console.log('Service workers are not supported in the current browser.');
-
-		}
-	</script>
-	<script>
-		var _hmt = _hmt || [];
-		(function () {
-			var hm = document.createElement("script");
-			hm.src = "//hm.baidu.com/hm.js?73df675d39af5853c92ed204ddecac34";
-			var s = document.getElementsByTagName("script")[0];
-			s.parentNode.insertBefore(hm, s);
-		})();
-	</script>
 </body>
 
 </html>
