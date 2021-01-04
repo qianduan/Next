@@ -10,8 +10,8 @@
 	style="background-image: url({{img_url}}){{else}}no-cover{{/if}}">
 	{{navigation}}
 	<div class="main-header-content">
-		<h1 class="page-title"><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
-		{{!-- <h2 class="page-description">{{@blog.description}}</h2> --}}
+		<h1 class="page-title"><a href="{{@site.url}}">{{@site.title}}</a></h1>
+		{{!-- <h2 class="page-description">{{@site.description}}</h2> --}}
 	</div>
 </header>
 <div class="main-content inner">
@@ -23,10 +23,6 @@
 				{{tags prefix=" on "}}
 			</section>
 			<section class="post-content">
-				<div class="give-me-five">
-					<a href="https://100offer.com/?utm_source=qianduan&utm_medium=display&utm_campaign=qianduan&campaign_code=qianduan"
-						target="_blank"><img src="https://img.qianduan.net/give-me-five/100offer.jpg"></a>
-				</div>
 				{{content}}
 			</section>
 			<footer class="post-footer">
@@ -55,7 +51,7 @@
 				<div class="author-section">
 					{{#if profile_image}}
 					<figure class="author-image">
-						<a class="img" href="{{url}}" style="background-image: url({{img_url}})"><span
+						<a class="img" href="{{url}}" style="background-image: url({{img_url profile_image }})"><span
 								class="hidden">{{name}}'s Picture</span></a>
 					</figure>
 					{{/if}}
@@ -77,7 +73,7 @@
 						</div>
 					</section>
 				</div>
-				{{/author}}
+				{{/primary_author}}
 
 			</footer>
 
@@ -85,16 +81,14 @@
 		{{!-- read next&prev --}}
 		<section class="read-next">
 			{{#next_post}}
-			<a class="read-next-story {{#if image}}" style="background-image: url({{img_url}}){{else}}no-cover{{/if}}"
-				href="{{url}}">
+			<a class="read-next-story no-cover" href="{{url}}">
 				<section class="post">
 					<h2>{{title}}</h2>
 				</section>
 			</a>
 			{{/next_post}}
 			{{#prev_post}}
-			<a class="read-next-story prev {{#if image}}"
-				style="background-image: url({{img_url}}){{else}}no-cover{{/if}}" href="{{url}}">
+			<a class="read-next-story prev no-cover" href="{{url}}">
 				<section class="post">
 					<h2>{{title}}</h2>
 				</section>
